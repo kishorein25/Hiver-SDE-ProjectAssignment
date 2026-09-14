@@ -52,12 +52,18 @@ def keyword_intent(message):
 
 
 def embed_texts(texts):
-    resp = requests.post(
-        OLLAMA_EMBED,
-        json={"model": EMBED_MODEL, "input": texts},
-        timeout=180,
-    ).json()
-    return resp["embeddings"]
+    """Embed texts via Ollama, chunked (single requests over ~16 texts can fail)."""
+    out = []
+    for i in range(0, len(texts), 16):
+        resp = requests.post(
+            OLLAMA_EMBED,
+            json={"model": EMBED_MODEL, "input": texts[i:i + 16]},
+            timeout=180,
+        ).json()
+        if "embeddings" not in resp:
+            raise RuntimeError(f"Embedding failed: {resp.get('error')}")
+        out.extend(resp["embeddings"])
+    return out
 
 
 # ---------------- Intent centroid classifier ----------------
