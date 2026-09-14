@@ -1,0 +1,8 @@
+# Large/generated artifacts - generate locally, do not commit
+data/
+results/
+__pycache__/
+*.pyc
+.DS_Store
+.vscode/
+.idea/

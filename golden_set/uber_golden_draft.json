@@ -1,0 +1,962 @@
+[
+  {
+    "message": "@115873 hired uberhire.  at first stop, the drvr cmplts trip and asks for 749. Forget 3 hr/30km. Ridiculous!!",
+    "agent_reply": "@687791 Here to help! Send us a note via https://t.co/6IqAxVj2X4 to assist you further.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support sir sent you DM. waiting for reply. Thanks",
+    "agent_reply": "@216990 We have received your DM, Hafiz, and will be in contact with you there shortly.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 why are you guys reserving money for uber rides I did not request for?!😠",
+    "agent_reply": "@138406 Here to help! Send us a note via; https://t.co/dInR3racif so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Have contacted you numerous times before and never ended up solving the problem.",
+    "agent_reply": "@753682 Hey, Viv. Please clarify the trouble you had with the app via DM so we can look into this further. https://t.co/sd7yH5jmbJ",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support hi I’m trying to recover my old account on new device. It’s not accepting the phone no. Help",
+    "agent_reply": "@140232 We'll get you sorted out! Please drop us a note at https://t.co/qHlZSjDE9L and a member of our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Having the worst uber experience in lifeeeee rn 😡😡😡 @Uber_Support",
+    "agent_reply": "@330451 Will you please DM us with the details about your experience as well as the trip information? We'll look into it.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I cant access my account. Ph no. 8962859370.\nPlease help",
+    "agent_reply": "@309769 Hello! Can you please send us your account email via DM so we can better connect? Thank you",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 stole my money and I never got my food",
+    "agent_reply": "@238727 Here to help! Send us a note here https://t.co/E1hSTdoIlL so we can further assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Uber don't seem to be able to deal with a straightforward question in a straightforward way. @115873 @Uber_Support",
+    "agent_reply": "@717770 Hey there, Lesley! We're very sorry to hear about the trouble with your account; rest assured, we absolutely want to ensure any questions you may have are given straightforward answers accordingly. We've received your most recent DM; we'll be following up momentarily to help.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 how do i report an accident .my vehicle was hit by an uber driver in tulare",
+    "agent_reply": "@207759 We take this very seriously! Please send us a DM with your email address so we can connect ASAP.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support hi im getting spammed with texts giving me a code and verification number!? Im not using the app so worried",
+    "agent_reply": "@704733 We're here to help! Send us a note via https://t.co/kGIXas5Cxg so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support \nJust reset my account. Hoe many times i will fill the same form. Or give a call. I faceed the same problem with #olacabs and my problem was solved within 3 mins. Without any call or email or  form etc. Here i am try from morning. Good. Very good",
+    "agent_reply": "@740985 We have received your DM, Shailendra, and will be in contact with you there shortly.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I have reviewed this document and the issue is ride passes were not sold out in one minute and friends purchased (same city) 45min later",
+    "agent_reply": "@588716 Hi, Jeremy! If ride passes sold out before you were able to purchase, we'll unfortunately not be able to offer you a ride pass this month.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 I just got charged $150.00 for cleaning fee. No diarrhea, vomit or death occurred in the 48 minutes I was in this uber. What gives?",
+    "agent_reply": "@197252 Here to help. Send us a note at https://t.co/a6RfeBkKmr so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I was charged three times for my ride last night… can someone look into it?",
+    "agent_reply": "@642103 Here to help! Follow up here; https://t.co/zJ6aIZinzb, and our team will connect right away.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 one of the driver cancel the ride saying there us traffic jam !!!! I want to complain",
+    "agent_reply": "@470205 We're here to help! Send us a note via https://t.co/e8HVorX5rh so our team can assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 @Uber_Support got an email telling me that I’ve been with y’all since 2013. I’m loyal. I’m faithful. So where is the promo? Everyone I know has a promo but me. \n\nI need an explanation.",
+    "agent_reply": "@144278 Happy to help! You can always share your referral code with friends so you can rack up free rides when they sign up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "This is some FUCK SHIT @Uber_Support \n\nHow are you gonna try and charge me $15 to get my item back? https://t.co/IWIb00blUq",
+    "agent_reply": "@143086 Here to help! Find more info about lost item return fee here,  https://t.co/uQJ88IZxla.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I used your link, but my situation was not a selectable option &amp; there are no \"other option\". I still don't have a solution to the problem.",
+    "agent_reply": "@200874 Here to help, Rob. Please share your email address in DM and we'll connect. https://t.co/sd7yH5jmbJ",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I received a message but the issue is not being addreessed... your driver says that we left her car wet (they told us this 2 hours after)",
+    "agent_reply": "@305452 We definitely understand your concern, Daniel. Please DM us the email and phone number linked to your account so we can review your inquiry.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 driver got LOST. Took an HOUR to get me to the airport (I live 15 mins away) then Uber has the nerve to charge me $49 -bc tolls. Uh NO",
+    "agent_reply": "@318849 Happy to help! Send us a note here, https://t.co/e8HVorX5rh, and our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support ordered $40 in food, it was 30 mins late, cold and 3 items missing. Not cool.",
+    "agent_reply": "@544539 Sorry to hear that, Emily! We'd be happy to help sort this out for you. Please send us a DM with your email so we can follow up right away.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support my current driver wants me to cancel the trip because he can't pick me up and i will be charged. Siya po dapat ang magcancel pero ayaw niya. He shouldn't have accepted the trip in the first place. https://t.co/Nz5LL2ACop",
+    "agent_reply": "@650758 Here to help! Send us a note at https://t.co/e8HVorX5rh so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I do have Cash as a payment method",
+    "agent_reply": "@140187 Send us a message via  https://t.co/hr88X1ZGuG. A member of our team will follow up as soon as possible.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support @115873 @119983 @116276 pay serious attention to this or leave India Uber. Safety is paramount @118342 @118341 https://t.co/XZGYA7PRF7",
+    "agent_reply": "@435864 Hey there, Varuna! We can assure you that Uber is absolutely dedicated to keeping everyone safe on the road + see https://t.co/PpBUxD5IB3.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 your tipping system is broken fix it immediately. Put that in your 180 plan...",
+    "agent_reply": "@288387 We appreciate  the feedback, Samual. We'll pass this along to the appropriate team.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 Support Services are awful. I am so upset w/ the extra $8 in fees and customer service sent me a generic response! LYFT all the way!",
+    "agent_reply": "@733223 We're here to help! Send us a DM with your email address so we can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 Not sure this makes sense as an error? #donutkrossus https://t.co/gGFV1JTpwy",
+    "agent_reply": "@693105 Sorry for the trouble, Silvana The high volume of users accessing the app may have caused a crash creating errors, please refresh/restart your app and try again!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I'm not complaining about a person here. I just want an assurance that waiting time should not be like half an hour or so. It should be at max 10 min or less.",
+    "agent_reply": "@722237 We apologize for the trouble, Sandeep. Please DM us your email address so we can follow up immediately.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 @Uber_Support https://t.co/5ehNwJDpM8",
+    "agent_reply": "@443993 We're here to help - please DM us the email address connected with your account profile so we can follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I already sent a damaged report.  They want to refund one item.  I told them i should not pay for delivery but they don't care.  Bad service",
+    "agent_reply": "@467358 That doesn't sound right. Can you please send us a DM with your email address so we can look into this with you?",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "WHERE ARE YOU GUYS???????????@Uber_Support",
+    "agent_reply": "@306970 We've received your DM and a member of our team has reached out. Please review your messages for our response.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 my girlfriend left her phone in an uber last night but the driver is saying it’s not in his car... any ideas?",
+    "agent_reply": "@492359 Here to help! Send us a note via https://t.co/zUe0dj6yoX to assist you further.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@uber_support  Cancelling a ride still causes the app to freeze for voiceover users.",
+    "agent_reply": "@138936 Sorry to hear this issue persists, Tasha. We see that we've been in touch about this via in app support, please refer there for an update. Our team is working to resolve this as soon as possible and will be in touch there once we have additional information to provide.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support My acct disabled. Try to reactivate it asks me to sign up again. Use acct daily, no payment issues. Want old acct back. Help!",
+    "agent_reply": "@357327 Let's take a closer look! Please reach out at https://t.co/BDlHSjUF9c and we'll follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@119983 @115873 - the MasterCard Promo is not working . I’ve taken close to 19 rides and the 6th free ride or discounted rate has never been given to me",
+    "agent_reply": "@798414 Here to help! Send us a note here; https://t.co/lqVgKo4ZO3 and our team will be able to assist!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support please check my account. I reinstalled d app today and it's showing an outstanding of yesterday. Surprising. Plz Resolve https://t.co/mg5DRr2XdP",
+    "agent_reply": "@122111 Here to help! Send us a note here, https://t.co/OhfgxSAY58, and our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873  @Uber_Support very disappointed! Estimated fare 200 . After promo code amount payable 150. After the actual trip ended up paying 250! \nPlease don't provide false estimated fare price! The amount I ended up paying is not even close to the estimated fare! #Uber  #UberApp",
+    "agent_reply": "@764274 Here to help! Send us a note via https://t.co/oEOANqFpjc so our team can get in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 why do I pay extra becoz your driver didn’t come at all!!! Seriously !!!",
+    "agent_reply": "@795889 We're here to help! Send us a note here, https://t.co/1xM0TILvAI and our team will be in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Hey @115873 my driver has been 14 minutes away for over 10 minutes and hasn’t even completed their last ride. Why should I be charged a cancellation fee?",
+    "agent_reply": "@254558 Here to help. Send us a note at https://t.co/h840Iouehc so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 fuck u for messing up my order for the second time",
+    "agent_reply": "@720112 We apologize for the trouble! Send us a DM with your email address with additional details and we'll connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 is their a discount code for the Astros?",
+    "agent_reply": "@470702 Not at the moment! But you can always share your referral code with friends so you can rack up free rides when they sign up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 Carpool option not coming to book ride in early morning. Facing too much of inconvenience. Only Ubergo Exists. https://t.co/D5Nrq2ddke",
+    "agent_reply": "@407353 Here to help! please send us a note via https://t.co/u3MyknJaaN so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support your DM was of no help. I want my phone back. Your customer support has lied, has falsified info, has provided misleading info. HORRIBLE",
+    "agent_reply": "@310447 We've received your DM and a member of our team has reached out. Please review your messages for our response.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support How do I DM you",
+    "agent_reply": "@251236 Follow this link, Michael and that will take you to DM! https://t.co/sd7yH5jmbJ",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I sent that in already....so I'm waiting on you guys 😊",
+    "agent_reply": "@302356 We're here to help! Send us a DM with your email address so we can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Warned by @115877 for “behavior” of reporting food damaged on delivery. This is not “behavior” but unsatisfactorily service rendered. You should not accuse your customers of dishonesty when reporting issues with food delivery!!!! https://t.co/jNCKiE7pGh",
+    "agent_reply": "@766856 We're sorry to hear this. Can you please send us a DM of your email address so we can look into this?",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support please let me know if Uber provide cabs for short distance journey on monthly basis.",
+    "agent_reply": "@366258 Hey, you can learn more here: https://t.co/FfS3302V8F.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 share cab algorithm sucks in Blr. DO SOMETHING. And I am not writing separately to uber support. It takes 2 hours for a 45 min ride",
+    "agent_reply": "@207304 Happy to help, Ashna! Please reach out to https://t.co/zUe0dj6yoX and fill out the 4 boxes at the bottom so we can get in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Just send this tweet to your most intellectual customer care team. You are following since yesterday but no use so better let be in open so people would know how frustrating it is to deal with \" apni gaadi\"",
+    "agent_reply": "@199944 Thank you for reaching out. A member of our team has followed up with you via email. From there you can reply with any further inquiries and questions you may have in regards to this concern. Please let us know if you have any additional questions or concerns.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 I just saw one of your self driving cars hit a kid",
+    "agent_reply": "@438092 We take this very seriously. Please send us a DM with your email address so we can connect ASAP.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Me: you’re blocking the bike lane #uberdriver :yes I know! It’s okay- Bicyclists are always in travel lanes blocking me. #uberDC @119720",
+    "agent_reply": "@204099 Your comments concern us, Faye. Please reach out via in-app Help, and a member of our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Again! Third time's the charm, @115873 -- time to give @115879 a chance. https://t.co/HuuwfgJtPV",
+    "agent_reply": "@420507 Here to help! Please reach out to https://t.co/zUe0dj6yoX and fill out the boxes at the bottom so we can get in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support - I'm unable to create account. Either on my phone or on the web. It tells me there is a problem. Which isn't very helpful.",
+    "agent_reply": "@409837 Here to help, Ian. Connect with us via https://t.co/2GUj1y6rFA and we'll be in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I understand but to get to the back of my neighborhood you have to pass my house to get to theirs. The issue is we are near a lake on map",
+    "agent_reply": "@652595 This is entirely possible that only part of a neighborhood would be included in our delivery area. We do hope to include your address very soon, please be sure to check the app regularly for updates.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Hey folks. Not to be a nudge, but over an hour feels like a crazy long time. https://t.co/kC9NzeNPCT",
+    "agent_reply": "@347415 Hi, Neil. Support inquiries are answered in the order they're received, we are working diligently on getting to your request!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Any update???",
+    "agent_reply": "@796690 Here to help! Send us a DM with your email address so we can assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 You need to do something in Mexico, your MX site does NOT allow for generation of invoices for the trips, I've used my corporate card and had to pay out of my own pocket, because I was unable to prove the expense!",
+    "agent_reply": "@152767 Here to help! Send us a note via https://t.co/u3MyknJaaN so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support it’s __email__",
+    "agent_reply": "@744311 For your privacy we'd recommend connecting with us in DM and deleting any personal details you may have posted.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "I am going to just stop using @115877 . I am tired of not getting what I order.",
+    "agent_reply": "@318707 We're sorry to hear that! Please drop us a note at https://t.co/xLLG6cfrJA and a member of our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support 30 minutes on twitter and it’s fixed!!!! Thank you!!!!💗💗💗",
+    "agent_reply": "@577960 Awesome, Teresa! We're so happy to hear that. If we can assist you with anything else, don't hesitate to let us know; we'd love to help.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I have DM u my no. Lets see how soon u call n resolve @123288",
+    "agent_reply": "@226648 Thank you for reaching out. A member of our team has followed up with you via email. From there you can reply with any further inquiries and questions you may have in regards to this concern. Please let us know if you have any additional questions or concerns.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 how do I file a complaint against driver unwilling to deliver my food",
+    "agent_reply": "@436472 We can take this seriously. Kindly send a note at: https://t.co/G6utFs8cUp so we can connect",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 so its fair that my driver cancelled and charged me 5.00? Cool another reason to go lyft",
+    "agent_reply": "@191161 Let's look into that!  Send us a note at https://t.co/JyzdtQmyxT so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "My @115873 driver peed his pants last night and the entire car smelled like Hot mf’in Pee. It was so disgusting and they want to credit me $5",
+    "agent_reply": "@601085 Sorry to hear about this experience. Please DM us the trip details, along with your account email so our team can follow up with you.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 @Uber_Support what kinda service confirms the arrival of the car only to be told that someone was already in it. bs https://t.co/YGmKLilojw",
+    "agent_reply": "@145082 Oh no! Thanks for bringing this to our attention. DM us your account email along with details for assistance.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support If I wanted to type a message I would have done that.   I would like a human to verbally communicate with.   Unauthorized charges to my card and a minor transported.....",
+    "agent_reply": "@397640 At this moment, we don't offer phone support for these issues. We're sorry for any inconvenience please send us your email address through DM (direct messages) so we can connect?",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support He ended up waiting an extra minute, which he was absolutely fine with, given the situation. \n\nI know I won't be using Uber anymore.",
+    "agent_reply": "@679809 We're here to help! Send us a DM with your email address so we can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@1582 I got charged 77us on my card for a 77 Argentinian pesos trip... Other trips were converted perfectly",
+    "agent_reply": "@669948 Here to help! Send us a note here, https://t.co/1xM0TILvAI, and our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support hi. can someone DM me asap.  I ve never used you, my debit card has been cloned and taxis paid for with you. thanks",
+    "agent_reply": "@422564 Here to help! Contact us via https://t.co/dInR3racif so we can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Is it impossible to contact Austin Greenlight Hub, unless I️ live in the city? I’m only seeing you offer “in-person” support, but I️ live 9 hours away :-/ what a bummer summer. Help! Me!",
+    "agent_reply": "@630815 Here to help! Check out https://t.co/Tg5WAWknMT for more information.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 @115877 To top it off I️ was hung up on twice when trying to resolve the problem and they were very unprofessional and very unhelpful so thank you for wasting my time and money I️ will NOT be ordering anything from you guys ever again.",
+    "agent_reply": "@282232 Here to help! Send us a note at https://t.co/XtWupRJe6U so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support How do I remove a vehicle from my account? I have 2 on there now, but I've sold one.",
+    "agent_reply": "@268776 Happy to help! Send us a note here, https://t.co/AbmeKf3Op9 and our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Your support team is clueless and of no help!",
+    "agent_reply": "@184188 We're sorry to hear about the trouble. A member of our team will be following up shortly through DM.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support (I replied 4 hours ago...)",
+    "agent_reply": "@144245 We've followed up with you via DM, be on the look out for our response.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support been trying again ever since, what's the deal? https://t.co/DGrxEdLOH2",
+    "agent_reply": "@696335 We're sorry you didn’t get your free Original Glazed Dozen box. Demand was through the roof and stocks ran out. Stay tuned for more fun promotions soon!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support It's insulting to keep get the same corporate canned answer and for my issue to be marked resolved when it hasn't been. Can you please help?",
+    "agent_reply": "@314197 Hi, Claire. Please send us a DM so we can connect.  https://t.co/sd7yH5jmbJ",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support is there a customer care number for Uber in Bangalore,India?",
+    "agent_reply": "@773077 At this time we don't offer phone support, as communication is streamlined via email. Visit this link https://t.co/balq3Eyso6, so our team can assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Hey @115873 ! Why do your drivers accept rides when they're 12 min out? I cancel after 6 min and get charged $5. #why",
+    "agent_reply": "@366301 Here to help! Send us a note here; https://t.co/h840Iouehc and our team will be able to help.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 @1285  The Driver had canceled the trip but when I book new ride it shows I have to pay for the trip which driver had canceled https://t.co/W6d1JTILPv",
+    "agent_reply": "@191782 Sorry to hear about that! Can you please contact us via https://t.co/JyzdtQmyxT so our team can connect?",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Still no fix",
+    "agent_reply": "@318922 Looks like our team has connected with you via our in app support about 3 hours ago. Please follow up there if you have any questions.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 Hey, Out order came it was very wrong. Can't find a way to resolve this through the app.   Thanks  :)",
+    "agent_reply": "@206365 Lets look further into this! Please DM us the email address linked to your Uber account and more details so we can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": ". @115873 it would be awesome if y’all would unlock my account and have someone call me to resolve the situation that’s 2 weeks overdue",
+    "agent_reply": "@438246 Sorry to hear you're having trouble reporting your issue. Send us a note via https://t.co/OhfgxSAY58 so we can assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I've recently messaged you on an issue, please do check your messages here on twitter.",
+    "agent_reply": "@357033 We see your DM and will follow up there shortly!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Tried that but can't sign in as the authorisation code gets sent to the phone in question.",
+    "agent_reply": "@496431 We're here to help! Send us a DM with your email address so we can assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Hey @115873 so you charge people $150 for allegedly puking in a car without evidence? Not even a pic? Without notice? Two weeks after the incident supposedly happened?",
+    "agent_reply": "@685658 Here to help! Send us a note here https://t.co/a6RfeBkKmr so we can further assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support done",
+    "agent_reply": "@633687 Sorry you were having trouble, Ryan. The restaurant may have just been offline for a while. Let us know if you have any further trouble ordering. We're here to help!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support No reply yet",
+    "agent_reply": "@424696 Here to assist, Samir! Please DM us the email address associated with your account to look further into this.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "So @115873 last night my uber driver cancelled the journey on me, because he couldn’t find me. Well... he could find me, I was literally in front of his eyes. He ALSO put the phone down on me. RUDE.",
+    "agent_reply": "@256454 Here to help! Send us a note via https://t.co/QsI1vsvcif to assist you further.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I requested Uber, I got a fare of N600 for a 7mins drive. Wen my family got to d place, d driva demanded and took 1k from them",
+    "agent_reply": "@428745 Here to help! Send us a note via https://t.co/wW2bTlNcsR to assist you further.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Yo @115873 why I can't log into my app? you are resetting my pwds and not allowing me log in? @53497 can you help?",
+    "agent_reply": "@359840 That doesn't sound right, Rajeev. Contact us through https://t.co/Md7v036OoC so we can assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "This company is robbing people @115873 if your drivers phone died that's not my problem. Do not charge me for a ride that I wasn't involved in after a certain time.",
+    "agent_reply": "@296348 We're here to help! Send us a note at https://t.co/1xM0TILvAI so we can assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 3 Uber rides cancelled one after the other by Uber drivers, had to wait for 90mins for the 4th ride....! Pickup from Bangalore Airport. They ask which destination and cancels the ride. How much ethics is this? https://t.co/DWSXr3UHlU",
+    "agent_reply": "@701113 Hi there! We're here to help. Send us a note here, https://t.co/e8HVorX5rh and so our team will assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support just used uber and found out that i didnt get my uber code when i signed up so wheres the 10pound off uber",
+    "agent_reply": "@349179 We have received your DM and will connect with you there shortly. Thanks!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support someone keeps trying to hack into my account. Can you disable my account or block the device?",
+    "agent_reply": "@722546 Happy to help! Send us a note here, https://t.co/kGIXas5Cxg, and our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Why deactivate my account after I cancel ride because I requested an XL but you send me a sedan. Not cool. Your loss. Go @115879",
+    "agent_reply": "@709342 Here to help. Send us a note at https://t.co/Md7v036OoC so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support This is my situation, it’s just removed itself from my area. I’m getting PTSD https://t.co/fFpMwK2F0B",
+    "agent_reply": "@692692 We're so sorry you didn’t get your free Original Glazed Dozen box. We experienced a technical issue and demand was high. Stay tuned for more fun promotions soon!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Is a PDF not available with UberX? https://t.co/BDaZYbNfIF",
+    "agent_reply": "@185649 Hi Chris, you should be able to hit the 'Request Invoice' option to download into a PDF file. Questions? Let us know.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Reimburse my Uber eats meal asap 35$ #findom @88644 https://t.co/1KitiWyEk9",
+    "agent_reply": "@657065 We're here to help. Can you please send us a DM with your email address so we can look into this?",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Fuck you @115877 always having people take my money without delivering my food",
+    "agent_reply": "@685214 Here to help! Please send us a DM with your email address and more info regarding your concern so we can assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 I ordered an Uber on Friday night from Birmingham, we were stood outside our hotel waiting and the driver turned up but then turned around, then I got charged £5.00 for cancelling it but we didn’t cancel and we were there! Not happy.",
+    "agent_reply": "@263148 Here to help! Send us a note here, https://t.co/h840Iouehc and our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support \nRonald Prior @575554  2m2 minutes ago\nMore\nThanks for LOCKING my instant pay UBER FOR &amp;@ HOURS??? Can't eat, pay bills",
+    "agent_reply": "@575554 We see that you've reached out directly to our support team via in-app, and we will continue communications there moving forward.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 2 cabs cancelled 5 mins away, useless!!",
+    "agent_reply": "@743887 Sorry for the trouble! Send us a note here, https://t.co/e8HVorX5rh, and our team will be in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 @Uber_Support please fill in the missing line.   Literally a 800 house subdivision waiting for you.   PLEASE!!! https://t.co/BSdZY99sv8",
+    "agent_reply": "@330338 We're working hard to expand our service area. Stay tuned to our website for updates: https://t.co/Mf9vzZ0uru",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support you guys get hacked again? My phone number changed and I can’t do xl trips anymore",
+    "agent_reply": "@159581 Here to help. Please send us a note at https://t.co/ILb6VgllH9 so we can further investigate this for you.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 have an issue with a ride. Driver never started ride on app so the ride is not showing. How do I contact customer service?",
+    "agent_reply": "@504461 Happy to help! Please reach out to https://t.co/zUe0dj6yoX and fill out the 4 boxes at the bottom so we can get in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support @Uber_Support @115873 He is asking me to come to his house. I'm ready to pay for his trip here, still he is not ready to listen. Pls sort this",
+    "agent_reply": "@437582 Hey Aishwarya! Can you please DM us with your account email so we can follow up?  Thank you",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "The #CabDriver charges extra for a finished trip even after payment was done. When concern raised to @115873 they says it’s correct!!! 😡 https://t.co/ibBfzSwUTc",
+    "agent_reply": "@351253 Here to help. Send us a note at https://t.co/zJ6aIZinzb so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I got charged a cleaning fee for a ride I did not take!!! Because of that I incurred extra charges on my visa! This company has the worst customer service and they do not care about their customers at all.",
+    "agent_reply": "@688301 We've replied via DM, please follow up there.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 hey fuck you for not accepting my discover card",
+    "agent_reply": "@712863 Sorry to hear about the troubles. Please send us a note at https://t.co/PwMnPVp5yK so we can look into this for you.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 can u help w/ a promo? First time trying #UberEATS today and added EATS-YGYUI it looked accepted but didn't reflect on total. :(",
+    "agent_reply": "@608105 Happy to look further into this, Evan! Please DM us the email address linked to your Uber account and more details so we can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support locked out of eats app after registration. Great 1st impression.",
+    "agent_reply": "@306439 Oh no! We are here to help. Please send us a DM with your account email or phone number and we'll be in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I am on a trip and your uber driver will not untie my phone. I cannot request another trip until this driver cancels",
+    "agent_reply": "@710094 We just got back to you via DM, Karina.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I did not take Uber from NY to Long Island, I was just checking fares. So please let me know why the price is so radically higher from NYC.",
+    "agent_reply": "@394956 Hi Peter! Find out more info here: https://t.co/UYuIveoHXo. If you'd like, you can also DM us with your email address so we can assist!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 It’s sad that Twitter is the only way to reach an actual person. I was supposed to get a refund and I’m STILL waiting!",
+    "agent_reply": "@770616 Here to help! Please send us a DM (direct messages)  with your email address and more info regarding your concern so we can assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support So I wont be able to remove my card unless I add a new one. Wat is d sense of having a cash option? I could not even switch to cash payment",
+    "agent_reply": "@775691 Sorry to hear about the trouble. Please DM us the email address connected with your account profile so we can follow up with you.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support \nI cannot apply promotion code with error You can't apply two of the same promotion but I don't know how to remove the current",
+    "agent_reply": "@173545 We've reached out via DM. Please follow up with us there for further assistance. Thanks for your patience.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873, please fix your app so users can pick their closest car rather than ones still over 10 minutes away &amp; not yet finished their trip.",
+    "agent_reply": "@315487 We apologize for any inconvenience. Kindly send a note at: https://t.co/u3MyknJaaN so our team will be in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I’ve been locked out of my account for months now and still feedback from fucking corporate on why https://t.co/TL7PvG9rOT",
+    "agent_reply": "@205877 Here to help! Send us a note via https://t.co/BDlHSjUF9c so we can connect right away.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Bro I still didn’t get my promo for referring.....",
+    "agent_reply": "@144382 It seems a member of our team has reached out to you. Please check your email and follow up with them there.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Sorry the word correction thing changed my Id. It is __email__",
+    "agent_reply": "@753381 Our team is currently reviewing your email and will follow up. Thanks!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I lost my wallet in a uber and cant get the number. Whats my best option",
+    "agent_reply": "@387806 We're here to help! Send us a note via https://t.co/rOtqyWzf0B so our team can get in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Already reached out; response I get is, price was shown to you before you board the cab. Looks like some robots sitting there.",
+    "agent_reply": "@452321 Thank you for getting back to us. Please send us a DM (direct message) with your account email and phone number so we can look into this.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 cancelled the request, got the same car that apparently STILL HASN'T MOVED and isn't picking up the phone",
+    "agent_reply": "@349445 Here to help! Send us a note here; https://t.co/FDTXFthjTD and our team will be able to assist!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Very frustrating and stressful when needing to get a train to connect to a flight",
+    "agent_reply": "@181728 We're sorry to hear of your experience. Be sure to visit us at the link provided so our team can take appropriate action for this.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@33352 I received Chicken for paneer burrito. This is definitely not acceptable. #UnhappyCustomer #poorservice #food @115877",
+    "agent_reply": "@297972 Sorry to hear of the trouble! Please reach out to us here: https://t.co/Tq0sPMsSdu so we can follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 @Uber_Support https://t.co/iC4ziF8kev",
+    "agent_reply": "@619235 Hi, Azim, we do see a cancellation fee on a recent trip. If this shouldn't have applied, send us a note here https://t.co/QsI1vsvcif.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 @Uber_Support @Uber_Support any progress on that? or should  i have to visit consumer court. it is the 3rd time same has been happened",
+    "agent_reply": "@734938 We'll have a member of our team respond to this shortly, Anupam. Please keep an eye out for our message.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 Why is your customer service not helping me with a getting a correct refund from mistake on your end?Please help why do I have to beg?",
+    "agent_reply": "@387145 Hi there! We're here to help. Can you please provide us your email address? From there we'll be able to assist further.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Thanks for speedy response @115873 https://t.co/Fud8xqXqXt",
+    "agent_reply": "@299850 Sorry for the trouble! Send us a note here,https://t.co/takeVjAR2G , and our team will be in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "refund now for taking advantage of drunk me @115873 https://t.co/ROcKfBCD0k",
+    "agent_reply": "@694530 Here to help! Send us a note here, https://t.co/1xM0TILvAI, and our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Hi I updated my new drivers license and im just waiting for the approval to drive again please help.",
+    "agent_reply": "@537959 We're here to help! Send us a note via https://t.co/LDXEzScUGp so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 the driver told me personally that he couldn’t find my home he told customer supp he had no place 2 leave the food I LIVE N A HOUS",
+    "agent_reply": "@448108 We're here to help! Send us a DM of your email address with more details regarding your concern so we can follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Actually I am stood in the freezing cold in the middle of nowhere just off a motorway junction.",
+    "agent_reply": "@690220 This is definitely not okay, Natalie! Again, please send us the details at https://t.co/QsI1vsvcif so we can look into this for you.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Had to change phone but kept the sim. uber didnt work with my number even I re inserted it on the old phone. Whats the fix?",
+    "agent_reply": "@501504 It seems a member of our team has reached out to you. Please check your email and follow up with them there.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Hey @2006 @115873 Your driver completely screwed up 3x &amp; customer service in app stinks! My friend @240986 has higher standards #Lyft",
+    "agent_reply": "@240982 We're sorry to hear this was your experience. Please send us a DM (Direct Message) with your email address with details so we can follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Why some people's custom promotion codes give a higher amount of $ than the codes found in the \"free rides\" regular section?",
+    "agent_reply": "@347710 Happy to help! Please send us a note here https://t.co/SjsQQ8ofRq so we can connect with you.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support can you just tell me why i got this random text from uber simply and easily here? i haven't used it in weeks and i don't have the app on my phone.",
+    "agent_reply": "@238731 Happy to take a look. Send us a DM with your email address so we can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "I have no emails. Fucking Christ @115877 lose all the AUTOMATED SHIT people have to go through. I swear no real people work here. https://t.co/f3Z1723TYH",
+    "agent_reply": "@328953 Please DM us the email address linked to your account so we can further assist. https://t.co/sd7yH5jmbJ",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support sent",
+    "agent_reply": "@756486 Our team is currently reviewing your email and will be in touch. We appreciate your patience!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 Sent a report and they started a conversation that started and ended in one message: \"M.\" Ugh, bank PayPal and Uber giving me the runaround.",
+    "agent_reply": "@612190 Please DM us specific details of your concern together with your email address, so we can better assist you.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I has two open issue regarding overcharged only one was resolved. So do look into the unresolved message https://t.co/dlNWx2ZT3F",
+    "agent_reply": "@320812 Thanks for following up! A member of our team will be following up regarding this other trip as soon as possible. Thanks for your patience!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "Hey @Uber_Support why am I charged $5 if your driver cancels? Some drivers won't drive me from O'Hare.  Help please.",
+    "agent_reply": "@345595 Please visit https://t.co/e8HVorX5rh to report your issue. A member of our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I applied for an Uber credit card, but I haven't heard anything back. Who can I can to see how the application is going?",
+    "agent_reply": "@757407 Here to help, Michael. Please send us a note at: https://t.co/QDn91HzZV0 and we'll connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support hey there, over the night I received 4 verification codes from Uber that I did not request, and I was no longer able to access my Uber account. I have since changed my password back, but I want to make sure no one has access to my account",
+    "agent_reply": "@636960 Here to help! Send us a note at https://t.co/kGIXas5Cxg so our team can connect right away.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Also please give it to that mcdonalds because this is a occurring issue with them being lazy",
+    "agent_reply": "@456707 Hi, Justin. We have responded to your in-app support inquiry, please follow up with us there.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Whatever link this is didn’t work... please help me and don’t send me to customer service that will respond in two weeks!",
+    "agent_reply": "@425612 Find out more info here; https://t.co/xMxswVLBKT If you'd like, you can also DM us with your email address so we can assist!",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support  Pls help in resetting the account. Thanks in Advance.",
+    "agent_reply": "@451331 We can definitely take a closer look! Contact us here: https://t.co/Md7v036OoC so we can help.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "So.... My @115873 driver put me out the car on my way to the airport bc she said I was going to far and she had to be at work at 3.",
+    "agent_reply": "@422779 We're sorry to hear this was your experience. Contact us via https://t.co/iOszeeHZhQ and we'll be in touch.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 a driver cancelled after he could not find me and I get charged $5.15... they went on a bridge when we was on the road beside it",
+    "agent_reply": "@306252 Happy to help! Send us a note here, https://t.co/e8HVorX5rh, and our team will follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I've sent a note already via the app feedback and reported a problem with the order. #scam pissing off experience.",
+    "agent_reply": "@238024 We're here to help! Send us a DM with your email address so we can follow up.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115877 has a bug where we couldn't contact the driver, @Uber_Support gave us the same # and sent us in circles &amp; we're starving. 🖕",
+    "agent_reply": "@548162 Let's take a further look into this. Please send us a DM with your email and phone number linked to your account.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@115873 hi, it’s me. Why do y’all have the drivers take the LONG route? It’s cold. I had a long day. I just wanna get home.",
+    "agent_reply": "@533181 Here to help! Send us a note here; https://t.co/y4EDPcVZOI and our team will be able to assist.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support i want to update my mobile no . I moved to Saudi Arabia the old no is no longer works , how i can change my phone no.",
+    "agent_reply": "@199128 Hey, Ahmad. For more information please visit the following page  https://t.co/XsfugVwpPL.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support I am very scared for my life after my uber experience! One of your drivers wouldn't unlock the door and she picked up 2 of her friends before she would even let me go to my destination!",
+    "agent_reply": "@188727 That's not ok! Can you please reach out via https://t.co/fS660rQ8NQ so our team can take a look?",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support why is it that your drivers seem to cancel on me 5 minutes after they accept my ride and I get charged 5.00 each time today that happened 2 times  back to back I want my money back I was ready I even texted the guy left my exact location",
+    "agent_reply": "@157060 Here to help. Send us a note at https://t.co/QsI1vsvcif so our team can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support Please hire drivers who respect women and know how to talk to them. This is with regards to your driver named \"Kiran Pednekar\"",
+    "agent_reply": "@215265 We've followed up through DM.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "This is unreal @115873 @Uber_Support I was never even picked up for this ride and now I'm being charged $157 with a fake picture of puke https://t.co/5b319FigtI",
+    "agent_reply": "@243186 We're so sorry about that! Please send us a DM with your email address with details so we can connect.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "@Uber_Support thank you",
+    "agent_reply": "@678784 It seems a member of our team has reached out to you. Please check your email and follow up with them there.",
+    "intent": null,
+    "escalation": null
+  },
+  {
+    "message": "But seriously though. When’re they gonna have @115877 in Delaware 👀",
+    "agent_reply": "@254707 Hi Paige! We're working hard to expand our service area. Stay tuned to our website for updates: https://t.co/Mf9vzZ0uru",
+    "intent": null,
+    "escalation": null
+  }
+]
