@@ -9,6 +9,7 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+import ui
 from src.intent_classifier import IntentClassifier
 from src.reply_generator import ReplyGenerator
 from src.escalation import EscalationRouter
@@ -25,12 +26,12 @@ class AISupportAgent:
     """
 
     def __init__(self, method: str = "llm"):
-        print("Initializing AI Support Agent...")
+        ui.status("info", "Initializing AI Support Agent...")
         self.classifier = IntentClassifier(method=method)
         self.reply_generator = None
         self.escalation_router = EscalationRouter()
         self.method = method
-        print("Agent ready.\n")
+        ui.status("ok", "Agent ready")
 
     def load_historical_data(self, df: pd.DataFrame, response_col: str = None):
         """
@@ -79,7 +80,7 @@ class AISupportAgent:
                     "response": resp["text"],
                 })
 
-        print(f"  Loaded {len(historical)} historical response pairs")
+        ui.status("ok", f"Loaded {len(historical)} historical response pairs")
         self.reply_generator = ReplyGenerator(historical_responses=historical)
 
     def process(self, customer_message: str) -> dict:
@@ -124,11 +125,9 @@ class AISupportAgent:
     def process_batch(self, messages: list[str]) -> list[dict]:
         """Process multiple messages."""
         results = []
-        for i, msg in enumerate(messages):
+        for i, msg in enumerate(ui.pbar(messages, desc="Processing", total=len(messages), unit=" msg")):
             result = self.process(msg)
             results.append(result)
-            if (i + 1) % 10 == 0:
-                print(f"  Processed {i + 1}/{len(messages)} messages")
         return results
 
 
@@ -138,48 +137,49 @@ def run_pipeline(brand: str = "Amazon", method: str = "llm"):
     """
     from src.data_loader import load_twitter_support
 
-    print("=" * 60)
-    print("HIVER SDE ASSIGNMENT - AI Support Agent Pipeline")
-    print("=" * 60)
+    ui.banner("HIVER SDE ASSIGNMENT - AI Support Agent Pipeline")
 
     # Load brand data
-    print(f"\n1. Loading data for brand: {brand}")
+    ui.subheader(f"1. Loading data for brand: {brand}")
     df = load_twitter_support(brand=brand, split="training", max_rows=50000)
 
     if df.empty:
-        print(f"No data found for brand '{brand}'. Trying 'Amazon'...")
+        ui.status("warn", f"No data found for brand '{brand}'. Trying 'Amazon'...")
         df = load_twitter_support(brand="Amazon", split="training", max_rows=50000)
 
     # Initialize agent
-    print(f"\n2. Initializing agent (method={method})")
+    ui.subheader(f"2. Initializing agent (method={method})")
     agent = AISupportAgent(method=method)
 
     # Load historical data
-    print("\n3. Building historical response index")
+    ui.subheader("3. Building historical response index")
     agent.load_historical_data(df)
 
     # Process sample messages
-    print("\n4. Processing sample messages")
+    ui.subheader("4. Processing sample messages")
     sample_messages = df[df["inbound"] == True]["text"].head(20).tolist()
 
     results = agent.process_batch(sample_messages)
 
     # Print results
-    print("\n" + "=" * 60)
-    print("SAMPLE RESULTS")
-    print("=" * 60)
+    ui.banner("SAMPLE RESULTS")
+    ui.kv_pairs({"Processed": len(results)})
     for i, r in enumerate(results[:5], 1):
-        print(f"\n--- Message {i} ---")
-        print(f"  Customer: {r['message'][:120]}")
-        print(f"  Intent: {r['intent']['intent']} (conf: {r['intent']['confidence']:.2f})")
-        print(f"  Reply: {r['reply']['reply'][:120]}")
-        print(f"  Escalate: {r['escalation']['escalate']} - {r['escalation']['reason'][:80]}")
+        print(f"\n  --- Message {i} ---")
+        ui.kv_pairs(
+            {
+                "Customer": r["message"][:120],
+                "Intent": f"{r['intent']['intent']} (conf: {r['intent']['confidence']:.2f})",
+                "Reply": r["reply"]["reply"][:120],
+                "Escalate": f"{r['escalation']['escalate']} - {r['escalation']['reason'][:80]}",
+            }
+        )
 
     # Save results
     os.makedirs("results", exist_ok=True)
     with open("results/sample_output.json", "w") as f:
         json.dump(results, f, indent=2, default=str)
-    print(f"\nResults saved to results/sample_output.json")
+    ui.status("ok", "Saved results/sample_output.json")
 
     return results
 

@@ -21,6 +21,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 from typing import Optional
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+import ui
 from src.data_loader import load_twitter_support
 from src.intent_classifier import IntentClassifier
 from src.reply_generator import ReplyGenerator
@@ -304,39 +305,53 @@ def run_full_evaluation(
     golden_set: list[dict],
 ) -> dict:
     """Run complete evaluation and save results."""
-    print("\n" + "=" * 60)
-    print("RUNNING EVALUATION")
-    print("=" * 60)
+    ui.banner("RUNNING EVALUATION")
 
     # Intent evaluation
-    print("\nIntent Classification:")
+    ui.subheader("Intent Classification")
     intent_eval = evaluate_intent_classification(golden_set, agent_results)
-    print(f"  Accuracy: {intent_eval['accuracy']:.3f}")
+    ui.table(
+        ["Metric", "Value"],
+        [("Accuracy", f"{intent_eval['accuracy']:.3f}"), ("Samples", str(intent_eval["n_samples"]))],
+    )
 
     # Reply quality
-    print("\nReply Quality (LLM-as-Judge):")
+    ui.subheader("Reply Quality (LLM-as-Judge)")
     reply_eval = evaluate_replies(golden_set, agent_results)
-    print(f"  Average Score: {reply_eval['average_score']:.2f}/5")
-    print(f"  Samples Judged: {reply_eval['n_judged']}")
+    ui.table(
+        ["Metric", "Value"],
+        [
+            ("Average Score", f"{reply_eval['average_score']:.2f}/5"),
+            ("Samples Judged", str(reply_eval["n_judged"])),
+        ],
+    )
 
     # Escalation
-    print("\nEscalation Routing:")
-    escalation_eval = evaluate_escalation(golden_set, agent_results)
-    print(f"  Precision: {escalation_eval['precision']:.3f}")
-    print(f"  Recall: {escalation_eval['recall']:.3f}")
-    print(f"  F1: {escalation_eval['f1']:.3f}")
+    ui.subheader("Escalation Routing")
+    esc = escalation_eval = evaluate_escalation(golden_set, agent_results)
+    ui.table(
+        ["Metric", "Value"],
+        [
+            ("Precision", f"{escalation_eval['precision']:.3f}"),
+            ("Recall", f"{escalation_eval['recall']:.3f}"),
+            ("F1", f"{escalation_eval['f1']:.3f}"),
+            ("True positives", str(escalation_eval["true_positives"])),
+            ("False positives", str(escalation_eval["false_positives"])),
+            ("False negatives", str(escalation_eval["false_negatives"])),
+        ],
+    )
 
     results = {
         "brand": brand,
         "intent_classification": intent_eval,
         "reply_quality": reply_eval,
-        "escalation": escalation_eval,
+        "escalation": esc,
     }
 
     os.makedirs("results", exist_ok=True)
     with open("results/evaluation_results.json", "w") as f:
         json.dump(results, f, indent=2, default=str)
-    print(f"\nResults saved to results/evaluation_results.json")
+    ui.status("ok", "Saved results/evaluation_results.json")
 
     return results
 

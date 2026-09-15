@@ -17,6 +17,8 @@ import sys
 import io
 import numpy as np
 
+import ui
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 from run_eval import Agent, RAG, keyword_intent
@@ -45,38 +47,47 @@ print("Loading agent (embeddings only, ~30s)...")
 rag = RAG()
 agent = Agent(anchors, rag)
 
-print("=" * 64)
-print("  Uber_Support AI Assistant  (powered by real Uber replies)")
-print("=" * 64)
-print("Type ANY customer message below and the agent will:")
-print("  1) classify its intent    2) draft a grounded reply")
-print("  3) decide auto-handle vs human escalation (with reason)")
-print()
-print("Try one of these (or type your own, or 'quit'):")
+ui.banner("Uber_Support AI Assistant (powered by real Uber replies)")
+ui.kv_pairs(
+    {
+        "1) Intent": "classify the customer message",
+        "2) Reply": "draft a grounded reply (retrieved, never generated)",
+        "3) Escalation": "auto-handle vs human, with reason",
+    }
+)
+
+print("\nTry one of these (or type your own, or 'quit'):")
 for i, q in enumerate(SAMPLE_QUESTIONS, 1):
     print(f"    {i}. {q}")
-print()
 
 while True:
     msg = input("\n> ").strip()
     if not msg:
         continue
     if msg.lower() in ("quit", "exit", "q"):
-        print("\nBye! This was the same agent pipeline run_eval.py evaluates on 160 golden examples.")
+        ui.status("ok", "Bye! This was the same agent pipeline run_eval.py evaluates on 160 golden examples.")
         break
     if msg.isdigit() and 1 <= int(msg) <= len(SAMPLE_QUESTIONS):
         num = int(msg)
         msg = SAMPLE_QUESTIONS[num - 1]
         print(f"   (using sample {num}: {msg}...)")
 
-    print("\n" + "-" * 64)
+    ui.hsep("-")
     print(f"  CUSTOMER: {msg[:200]}")
-    print("-" * 64)
+    ui.hsep("-")
 
     p = agent.process(msg)
-    print(f"\n  {chr(8226)} INTENT    ->  {p['intent']}")
-    print(f"  {chr(8226)} ESCALATE  ->  {'YES  (human agent needed)' if p['escalate'] else 'NO   (auto-handled)'}")
-    if p["escalate"]:
+    if p.get("out_of_scope"):
+        print(f"\n  INTENT    ->  {p['intent']}")
+        print(f"  ESCALATE  ->  YES  (ROUTED TO ADMIN / HUMAN - {p.get('out_of_scope_brand')} is not an Uber service)")
         print(f"      Reason: {p['escalation_reason']}")
-    print(f"  {chr(8226)} REPLY     ->  {p['reply']}")
-    print(f"  {chr(8226)} GROUNDING ->  {p['reply_source_sim']:.2f} similarity to the real past customer message (higher = closer match)")
+        print(f"  RAG REPLY ->  NONE (not generated - outside Uber's scope)")
+        print(f"  ACTION    ->  {p['reply']}")
+    else:
+        esc_txt = "YES  (human agent needed)" if p["escalate"] else "NO   (auto-handled)"
+        print(f"\n  INTENT    ->  {p['intent']}")
+        print(f"  ESCALATE  ->  {esc_txt}")
+        if p["escalate"]:
+            print(f"      Reason: {p['escalation_reason']}")
+        print(f"  REPLY     ->  {p['reply']}")
+        print(f"  GROUNDING ->  {p['reply_source_sim']:.2f} similarity to the real past customer message (higher = closer match)")

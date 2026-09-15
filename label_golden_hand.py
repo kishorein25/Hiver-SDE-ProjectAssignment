@@ -1,6 +1,8 @@
 import json, sys, io
 from collections import Counter
 
+import ui
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 with open("golden_set/uber_golden_draft.json", encoding="utf-8") as f:
@@ -185,8 +187,20 @@ with open("golden_set/uber_golden.json", "w", encoding="utf-8") as f:
 
 intents = Counter(i["intent"] for i in items)
 esc = sum(1 for i in items if i["escalation"])
-print(f"Golden set: {len(items)} hand-labeled examples")
-print(f"Escalation: {esc}/{len(items)} = {esc/len(items):.1%}")
-print("\nIntent distribution:")
-for k, v in intents.most_common():
-    print(f"  {k}: {v}")
+
+ui.banner("Golden set built")
+ui.kv_pairs(
+    {
+        "Total examples": f"{len(items)}",
+        "Escalated": f"{esc}/{len(items)} ({esc/len(items):.1%})",
+    }
+)
+
+ui.table(
+    ["Intent", "Count", "Pct"],
+    [
+        (k, v, f"{v/len(items):.1%}")
+        for k, v in intents.most_common()
+    ],
+    title="Intent distribution",
+)

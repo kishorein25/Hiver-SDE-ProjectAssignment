@@ -9,16 +9,9 @@ import sys, io, json, re
 import numpy as np
 import requests
 
+import ui
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
-
-golden = json.load(open("golden_set/uber_golden.json", encoding="utf-8"))
-preds = json.load(open("results/our_agent_predictions.json"))
-
-# ---- Contrastive judge ----
-rng = np.random.RandomState(11)
-idx = rng.choice(len(golden), 30, replace=False)
-
-KEPT = set(str(k) for k in idx)
 
 
 def contrast(cust, a, b):
@@ -63,46 +56,69 @@ Reply ONLY: A, B, or EQUAL."""
         return "N/A"
 
 
-print("=== Contrastive LLM-judge (vs historical Uber reply) on 30 samples ===")
-wins = ties = losses = 0
-details = []
-for n, i in enumerate(idx):
-    c = contrast(golden[i]["message"], preds[i]["reply"], golden[i]["agent_reply"])
-    if c == "A":
-        wins += 1
-    elif c == "EQUAL":
-        ties += 1
-    elif c == "B":
-        losses += 1
-    details.append({"idx": int(i), "verdict": c})
-    print(f"  {n+1}/30 idx {i}: {c}")
+def main():
+    golden = json.load(open("golden_set/uber_golden.json", encoding="utf-8"))
+    preds = json.load(open("results/our_agent_predictions.json"))
+    ui.banner("Failure analysis")
 
-total = wins + ties + losses
-print(f"\nWin (agent>historical): {wins} | Tie (equal): {ties} | Loss (agent<historical): {losses}")
-print(f"Judge win-or-tie rate: {(wins+ties)/total:.1%}")
-with open("results/judge_contrast_30.json", "w") as f:
-    json.dump({"n": total, "wins": wins, "ties": ties, "losses": losses,
-               "win_or_tie": (wins+ties)/total, "details": details}, f, indent=2)
+    # ---- Contrastive judge ----
+    rng = np.random.RandomState(11)
+    idx = rng.choice(len(golden), 30, replace=False)
 
-# ---- Escalation failure analysis ----
-print("\n=== Escalation false positives (agent said escalate, golden says no) ===")
-fp = [i for i, (p, g) in enumerate(zip(preds, golden)) if p["escalate"] and not g["escalation"]]
-print(f"False positives: {len(fp)}")
-for i in fp[:8]:
-    print(f"  [{i}] {golden[i]['message'][:95]}\n        reason: {preds[i]['escalation_reason']}")
+    ui.subheader("Contrastive LLM judge (agent vs historical Uber reply)")
+    wins = ties = losses = 0
+    details = []
+    for n, i in enumerate(ui.pbar(idx, desc="Judging", total=len(idx), unit=" sample")):
+        c = contrast(golden[i]["message"], preds[i]["reply"], golden[i]["agent_reply"])
+        if c == "A":
+            wins += 1
+        elif c == "EQUAL":
+            ties += 1
+        elif c == "B":
+            losses += 1
+        details.append({"idx": int(i), "verdict": c})
+        print(f"    [{n+1:2d}] idx {i:3d}  verdict={c}")
 
-fn = [i for i, (p, g) in enumerate(zip(preds, golden)) if not p["escalate"] and g["escalation"]]
-print(f"False negatives: {len(fn)}")
-for i in fn[:8]:
-    print(f"  [{i}] reason wanted but missed: {golden[i]['escalation_reason'][:80]}")
-    print(f"        msg: {golden[i]['message'][:95]}")
+    total = wins + ties + losses
+    ui.table(
+        ["Metric", "Count", "Pct"],
+        [
+            ("Win (agent > historical)", wins, f"{wins/total:.1%}"),
+            ("Tie (equal)", ties, f"{ties/total:.1%}"),
+            ("Loss (agent < historical)", losses, f"{losses/total:.1%}"),
+            ("Win-or-tie rate", wins + ties, f"{(wins+ties)/total:.1%}"),
+        ],
+    )
+    with open("results/judge_contrast_30.json", "w") as f:
+        json.dump({"n": total, "wins": wins, "ties": ties, "losses": losses,
+                   "win_or_tie": (wins+ties)/total, "details": details}, f, indent=2)
 
-# ---- Intent confusion ----
-print("\n=== Intent confusions (top) ===")
-conf = {}
-for p, g in zip(preds, golden):
-    if p["intent"] != g["intent"]:
-        key = f"{g['intent']}->{p['intent']}"
-        conf[key] = conf.get(key, 0) + 1
-for k, v in sorted(conf.items(), key=lambda x: -x[1])[:12]:
-    print(f"  {k}: {v}")
+    # ---- Escalation failure analysis ----
+    ui.subheader("Escalation false positives (agent said escalate, golden says no)")
+    fp = [i for i, (p, g) in enumerate(zip(preds, golden)) if p["escalate"] and not g["escalation"]]
+    ui.status("info", f"False positives: {len(fp)}")
+    for i in fp[:8]:
+        print(f"    [{i}] {golden[i]['message'][:95]}")
+        print(f"        reason: {preds[i]['escalation_reason']}")
+
+    fn = [i for i, (p, g) in enumerate(zip(preds, golden)) if not p["escalate"] and g["escalation"]]
+    ui.status("info", f"False negatives: {len(fn)}")
+    for i in fn[:8]:
+        print(f"    [{i}] reason wanted but missed: {golden[i]['escalation_reason'][:80]}")
+        print(f"        msg: {golden[i]['message'][:95]}")
+
+    # ---- Intent confusion ----
+    ui.subheader("Intent confusions (top)")
+    conf = {}
+    for p, g in zip(preds, golden):
+        if p["intent"] != g["intent"]:
+            key = f"{g['intent']} -> {p['intent']}"
+            conf[key] = conf.get(key, 0) + 1
+    ui.table(
+        ["Confusion", "Count"],
+        [(k, v) for k, v in sorted(conf.items(), key=lambda x: -x[1])[:12]],
+    )
+
+
+if __name__ == "__main__":
+    main()

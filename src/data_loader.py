@@ -7,7 +7,11 @@ Path: D:\dataset\twcs\twcs.csv
 
 import pandas as pd
 import os
+import sys
 from typing import Optional
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+import ui
 
 LOCAL_CSV = r"D:\dataset\twcs\twcs.csv"
 
@@ -26,13 +30,13 @@ def load_twitter_support(
                If None, returns all brands.
         max_rows: Maximum number of rows to load. None = all.
     """
-    print(f"Loading Twitter Support dataset from {LOCAL_CSV}...")
+    ui.status("info", f"Loading Twitter Support dataset from {LOCAL_CSV}...")
     df = pd.read_csv(LOCAL_CSV, nrows=max_rows)
-    print(f"  Total rows loaded: {len(df)}")
+    ui.status("ok", f"Total rows loaded: {len(df)}")
 
     if brand:
         df = df[df["author_id"] == brand].copy()
-        print(f"  Filtered to brand '{brand}': {len(df)} rows")
+        ui.status("ok", f"Filtered to brand '{brand}': {len(df)} rows")
 
     return df
 
@@ -43,9 +47,9 @@ def load_all_brands_sample(
     """
     Load a sample of all brands to explore which brand to use.
     """
-    print(f"Loading {n_rows} rows from all brands to explore...")
+    ui.status("info", f"Loading {n_rows} rows from all brands to explore...")
     df = pd.read_csv(LOCAL_CSV, nrows=n_rows)
-    print(f"  Loaded {len(df)} rows across all brands")
+    ui.status("ok", f"Loaded {len(df)} rows across all brands")
     return df
 
 
@@ -76,7 +80,7 @@ def load_banking77(streaming: bool = True) -> pd.DataFrame:
     Load Banking77 from HuggingFace for intent work.
     Contains 77 labelled intent classes.
     """
-    print("Loading Banking77 dataset...")
+    ui.status("info", "Loading Banking77 dataset...")
     ds = load_dataset("PolyAI/banking77", streaming=streaming)
 
     if streaming:
@@ -87,7 +91,7 @@ def load_banking77(streaming: bool = True) -> pd.DataFrame:
     else:
         df = ds["test"].to_pandas()
 
-    print(f"  Loaded {len(df)} rows, {df['label'].nunique()} intent classes")
+    ui.status("ok", f"Loaded {len(df)} rows, {df['label'].nunique()} intent classes")
     return df
 
 
@@ -152,5 +156,5 @@ def save_brand_data(df: pd.DataFrame, brand: str, output_dir: str = "data"):
     os.makedirs(output_dir, exist_ok=True)
     path = os.path.join(output_dir, f"{brand.lower().replace(' ', '_')}.csv")
     df.to_csv(path, index=False)
-    print(f"  Saved to {path}")
+    ui.status("ok", f"Saved to {path}")
     return path

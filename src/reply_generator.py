@@ -8,7 +8,12 @@ Reply generator using RAG approach.
 
 import requests
 import numpy as np
+import os
+import sys
 from typing import Optional
+
+sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+import ui
 
 
 OLLAMA_URL = "http://localhost:11434"
@@ -56,9 +61,9 @@ class ReplyGenerator:
             return
 
         texts = [r["response"] for r in self.historical_responses]
-        print(f"  Embedding {len(texts)} historical responses...")
+        ui.status("info", f"Embedding {len(texts)} historical responses...")
         self.response_embeddings = np.array(get_embeddings_batch(texts))
-        print(f"  Index built: {self.response_embeddings.shape}")
+        ui.status("ok", f"Index built: {self.response_embeddings.shape}")
 
     def retrieve(self, query: str, top_k: int = 3) -> list[dict]:
         """Retrieve top-k most similar historical responses."""

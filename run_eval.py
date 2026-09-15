@@ -20,6 +20,8 @@ import requests
 from collections import Counter
 from sklearn.metrics import classification_report, precision_recall_fscore_support
 
+import ui
+
 OLLAMA_EMBED = "http://localhost:11434/api/embed"
 EMBED_MODEL = "mxbai-embed-large"
 
@@ -83,7 +85,7 @@ class CentroidClassifier:
             mask = np.array([l == intent for l in labels[: len(embs)]])
             if mask.sum() > 0:
                 self.centroids[intent] = embs[mask].mean(axis=0)
-        print(f"  CentroidClassifier: {len(self.centroids)} classes")
+        ui.status("ok", f"Centroid classifier ready: {len(self.centroids)} intent classes")
 
     def predict(self, text):
         emb = np.array(embed_texts([text])[0])
@@ -138,6 +140,42 @@ def rule_escalate(message):
     return False, "Standard support request; routine resolution pattern available"
 
 
+# ---------------- Out-of-scope (non-Uber) detection ----------------
+# If a customer message concerns a brand/service that is NOT Uber, the agent
+# must not auto-generate an Uber RAG reply. It escalates straight to a human
+# (admin). Word boundaries are used so e.g. "ola" doesn't hit "hola".
+EXTERNAL_BRANDS = [
+    "zomato", "swiggy", "oso", "ola", "rapido", "porter", "lyft", "bolt car",
+    "grab", "gocar", "gocab", "deliveroo", "doordash", "grubhub",
+    "amazon", "flipkart", "myntra", "meesho", "ajio", "snapdeal", "d mart",
+    "bigbasket", "big basket", "zepto", "blinkit", "dunzo", "instamart",
+    "paytm", "phonepe", "netflix", "prime video", "hotstar", "spotify",
+    "irctc", "redbus", "red bus", "makemytrip", "cleartrip", "airbnb",
+    "fedex", "dhl", "bluedart", "blue dart", "ekart",
+]
+_OOS_BRANDS = [r"\s+".join(re.escape(p) for p in b.split()) for b in EXTERNAL_BRANDS]
+_OOS_RE = re.compile(r"\b(" + "|".join(_OOS_BRANDS) + r")\b", flags=re.IGNORECASE)
+
+# If the customer message ALSO references Uber itself (the @handle used in the
+# corpus, "uber", etc.), it's still an Uber support request (e.g. "...another
+# reason to go lyft" is a churn threat about an UBER ride) -> NOT out-of-scope.
+UBER_CONTEXT_RE = re.compile(r"\buber\b|@\d{3,}|@uber", flags=re.IGNORECASE)
+
+
+def detect_out_of_scope(message):
+    """Return (out_of_scope: bool, brand: str|None).
+
+    A brand/service that is NOT Uber escalates to a human only when the
+    message is not also about Uber itself (no @handle / "uber" reference).
+    """
+    m = _OOS_RE.search(message)
+    if not m:
+        return False, None
+    if UBER_CONTEXT_RE.search(message):
+        return False, None
+    return True, m.group(1)
+
+
 # ---------------- RAG reply ----------------
 class RAG:
     def __init__(self):
@@ -160,6 +198,23 @@ class Agent:
         self.rag = rag
 
     def process(self, message):
+        # Out-of-scope: any non-Uber brand/service mention -> escalate to a
+        # human (admin) and do NOT auto-generate an Uber RAG reply.
+        oos, oos_brand = detect_out_of_scope(message)
+        if oos:
+            return {
+                "intent": "out_of_scope",
+                "reply": "This request is outside Uber's support scope. It won't be answered "
+                         "automatically and has been routed to a human agent (admin).",
+                "reply_source_sim": 0.0,
+                "escalate": True,
+                "escalation_reason": f"Out-of-scope: customer mentions \"{oos_brand}\", "
+                                     f"which is not an Uber service - routed to human/admin",
+                "out_of_scope": True,
+                "out_of_scope_brand": oos_brand,
+                "route": "admin",
+            }
+
         # Intent
         intent, conf = self.classifier.predict(message)
         if intent is None or conf["confidence"] < 0.25:
@@ -178,6 +233,7 @@ class Agent:
             "reply_source_sim": retrieved[0][1] if retrieved else 0.0,
             "escalate": esc,
             "escalation_reason": reason,
+            "route": "admin" if esc else "assistant",
         }
 
 
@@ -212,8 +268,8 @@ def reply_grounding(agent_replies, reference_replies):
 
 # ---------------- Main ----------------
 def main():
+    ui.banner("Running evaluation")
     golden = json.load(open("golden_set/uber_golden.json", encoding="utf-8"))
-    print(f"Golden set: {len(golden)}")
 
     # Build anchors from training keywords (NOT from golden set - uses the raw pairs)
     with open("data/uber_pairs.json") as f:
@@ -226,10 +282,21 @@ def main():
         anchors.setdefault(intent, []).append(pairs[idx]["customer_text"][:200])
     # cap anchors
     anchors = {k: v[:25] for k, v in anchors.items()}
-    print(f"Anchors: { {k: len(v) for k, v in anchors.items()} }")
+
+    ui.subheader("Setup")
+    ui.kv_pairs(
+        {
+            "Golden set size": len(golden),
+        }
+    )
+    ui.table(
+        ["Intent", "Anchor examples"],
+        [(k, len(v)) for k, v in sorted(anchors.items(), key=lambda kv: -len(kv[1]))],
+        title="Anchors per intent (train outside golden set)",
+    )
 
     rag = RAG()
-    print("RAG index loaded")
+    ui.status("ok", "RAG index loaded")
 
     agent = Agent(anchors, rag)
     trivial = TrivialBaseline()
@@ -239,19 +306,17 @@ def main():
     results = {}
 
     for name, sys_obj in systems.items():
-        print(f"\n=== Running {name} on {len(golden)} examples ===")
+        ui.subheader(f"Running system: {name}")
         preds = []
-        for i, g in enumerate(golden):
+        for i, g in enumerate(ui.pbar(golden, desc=f"{name}", total=len(golden), unit=" msg")):
             p = sys_obj.process(g["message"])
             preds.append(p)
-            if (i + 1) % 40 == 0:
-                print(f"  {i + 1}/{len(golden)}")
         results[name] = preds
 
         os.makedirs("results", exist_ok=True)
         with open(f"results/{name}_predictions.json", "w") as f:
             json.dump(preds, f, indent=2)
-        print(f"  Saved results/{name}_predictions.json")
+        ui.status("ok", f"Saved results/{name}_predictions.json")
 
     # ---------------- Metrics ----------------
     report = {}
@@ -285,22 +350,46 @@ def main():
             "reply_grounding_sim": {"mean": mean_sim, "pct_ge_0.7": pct_ge7, "pct_ge_0.8": pct_ge8},
             "reply_avg_retrieval_sim": avg_ret_sim,
         }
-        print(f"\n[{name}] Intent acc={acc:.3f}, Esc P/R/F1={prec:.2f}/{rec:.2f}/{f1:.2f}, "
-              f"Grounding={mean_sim:.3f} ({pct_ge7:.0%}>=0.7)")
 
     with open("results/evaluation_summary.json", "w") as f:
         json.dump(report, f, indent=2)
-    print("\nSaved results/evaluation_summary.json")
+
+    ui.table(
+        ["System", "Intent acc", "Esc P", "Esc R", "Esc F1", "Grounding", "(>=0.7)"],
+        [
+            (
+                sys_label,
+                f"{report[n]['intent_accuracy']:.3f}",
+                f"{report[n]['escalation']['precision']:.2f}",
+                f"{report[n]['escalation']['recall']:.2f}",
+                f"{report[n]['escalation']['f1']:.2f}",
+                f"{report[n]['reply_grounding_sim']['mean']:.3f}",
+                f"{report[n]['reply_grounding_sim']['pct_ge_0.7']:.0%}",
+            )
+            for n, sys_label in (
+                ("our_agent", "our_agent"),
+                ("trivial", "trivial"),
+                ("simple", "simple"),
+            )
+        ],
+        title="Evaluation summary",
+    )
+    ui.status("ok", "Saved results/evaluation_summary.json")
 
     # Per-intent accuracy for our agent
-    print("\n=== Per-intent accuracy (our agent) ===")
     preds = results["our_agent"]
     true_intent = [g["intent"] for g in golden]
     pred_intent = [p["intent"] for p in preds]
-    for intent in set(true_intent):
-        idxs = [i for i, t in enumerate(true_intent) if t == intent]
-        correct = sum(1 for i in idxs if pred_intent[i] == intent)
-        print(f"  {intent}: {correct}/{len(idxs)} = {correct/len(idxs):.2f}")
+    ui.table(
+        ["Intent", "Correct", "Total", "Accuracy"],
+        [
+            (intent, sum(1 for i in idxs if pred_intent[i] == intent), len(idxs),
+             f"{sum(1 for i in idxs if pred_intent[i] == intent) / len(idxs):.2f}")
+            for intent in sorted(set(true_intent))
+            for idxs in [[i for i, t in enumerate(true_intent) if t == intent]]
+        ],
+        title="Per-intent accuracy",
+    )
 
 
 if __name__ == "__main__":

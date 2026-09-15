@@ -8,6 +8,8 @@ import sys, io, json, re
 import numpy as np
 import requests
 
+import ui
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 golden = json.load(open("golden_set/uber_golden.json", encoding="utf-8"))
@@ -49,14 +51,16 @@ Reply ONLY: A, B, or EQUAL."""
 rng = np.random.RandomState(2026)
 idx = rng.choice(len(golden), 14, replace=False)
 
+ui.banner("Judge-vs-human calibration (14 samples)")
 samples = []
-for i in idx:
+for n, i in enumerate(idx):
     v = contrast(golden[i]["message"], preds[i]["reply"], golden[i]["agent_reply"])
     samples.append({"idx": int(i), "judge": v})
-    print(f"\n===== sample idx {i} | judge={v} =====")
-    print(f"CUSTOMER: {golden[i]['message'][:200]}")
+    print(f"\n  --- sample {n+1}/14 | idx {i} | judge={v} ---")
+    print(f"  CUSTOMER : {golden[i]['message'][:200]}")
     print(f"  A (AGENT):   {preds[i]['reply'][:220]}")
     print(f"  B (HISTORY): {golden[i]['agent_reply'][:220]}")
 
-json.dump({"samples": samples}, open("results/judge_human_sample.json", "w"), indent=2)
-print("\nSaved results/judge_human_sample.json")
+with open("results/judge_human_sample.json", "w") as f:
+    json.dump({"samples": samples}, f, indent=2)
+ui.status("ok", "Saved results/judge_human_sample.json")

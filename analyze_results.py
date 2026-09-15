@@ -7,6 +7,8 @@ import sys, io, json, re
 import numpy as np
 import requests
 
+import ui
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 
 OLLAMA_EMBED = "http://localhost:11434/api/embed"
@@ -51,9 +53,10 @@ Tone matching and groundedness matter. Output ONLY a number 1-5."""
 def main():
     preds = json.load(open("results/our_agent_predictions.json"))
     golden = json.load(open("golden_set/uber_golden.json", encoding="utf-8"))
-    print(f"{len(preds)} predictions, {len(golden)} golden")
+    ui.banner("Analyzing results")
+    ui.kv_pairs({"Predictions": len(preds), "Golden examples": len(golden)})
 
-    print("\nComputing reply-reply embedding similarity (objective grounding)...")
+    ui.subheader("Objective grounding (embedding similarity)")
     a_emb = embed([p["reply"] for p in preds])
     r_emb = embed([g["agent_reply"] for g in golden])
     sims = (a_emb * r_emb).sum(axis=1) / (np.linalg.norm(a_emb, axis=1) * np.linalg.norm(r_emb, axis=1) + 1e-9)
@@ -61,37 +64,56 @@ def main():
         p["reply_similarity"] = float(s)
     with open("results/our_agent_predictions.json", "w") as f:
         json.dump(preds, f, indent=2)
-    print(f"  Mean similarity: {sims.mean():.3f}, >=0.8: {(sims>=0.8).mean():.1%}, >=0.7: {(sims>=0.7).mean():.1%}")
+    ui.table(
+        ["Metric", "Value"],
+        [
+            ("Mean similarity", f"{sims.mean():.3f}"),
+            (">=0.8", f"{(sims>=0.8).mean():.1%}"),
+            (">=0.7", f"{(sims>=0.7).mean():.1%}"),
+        ],
+    )
 
     rng = np.random.RandomState(11)
     idx = rng.choice(len(golden), 30, replace=False)
     judge_scores = []
-    print("\nRunning improved LLM judge on 30 samples...")
-    for n, i in enumerate(idx):
+    ui.subheader("LLM judge (30 samples)")
+    for n, i in enumerate(ui.pbar(idx, desc="Judging", total=len(idx), unit=" sample")):
         s = judge_reply(golden[i]["message"], preds[i]["reply"], golden[i]["agent_reply"])
         judge_scores.append({"idx": int(i), "judge": int(s),
                              "similarity": float(sims[i]),
                              "customer": golden[i]["message"][:100],
                              "agent": preds[i]["reply"][:120],
                              "reference": golden[i]["agent_reply"][:120]})
-        print(f"  {n+1}/30 -> idx {i} score {s} sim {sims[i]:.2f}")
+        print(f"    [{n+1:2d}] idx {i:3d}  score={s}  sim={sims[i]:.2f}")
     avg = np.mean([j["judge"] for j in judge_scores])
-    print(f"\nLLM-judge average: {avg:.2f}/5")
-    print(f"Accept (>=4): {sum(1 for j in judge_scores if j['judge']>=4)/len(judge_scores):.1%}, (>=3): {sum(1 for j in judge_scores if j['judge']>=3)/len(judge_scores):.1%}")
+    ui.table(
+        ["Metric", "Value"],
+        [
+            ("Judge average", f"{avg:.2f}/5"),
+            ("Accept (>=4)", f"{sum(1 for j in judge_scores if j['judge']>=4)/len(judge_scores):.1%}"),
+            ("Accept (>=3)", f"{sum(1 for j in judge_scores if j['judge']>=3)/len(judge_scores):.1%}"),
+        ],
+    )
 
     # Sanity check: judge the TRUE reference reply against itself
-    print("\nSanity check: judge scores when AGENT = true reference reply (should be high)...")
+    ui.subheader("Sanity check (AGENT = true reference, should be high)")
     sanity = []
-    for n, i in enumerate(idx[:10]):
+    for n, i in enumerate(ui.pbar(idx[:10], desc="Sanity", total=10, unit=" sample")):
         ref = golden[i]["agent_reply"]
         s = judge_reply(golden[i]["message"], ref, ref)
         sanity.append(s)
-        print(f"  {n+1}/10 -> idx {i} sanity score {s}")
-    print(f"  Sanity average: {np.mean(sanity):.2f}/5  (low => judge is miscalibrated)")
+        print(f"    [{n+1:2d}] idx {i:3d}  sanity={s}")
+    print()
+    ui.kv_pairs(
+        {
+            "Sanity average": f"{np.mean(sanity):.2f}/5",
+            "Note": "Low => judge is miscalibrated",
+        }
+    )
 
-    with open("results/judge_scores_30.json", "w") as f:
+    with open("results/judge_scores_30.json", "w", encoding="utf-8") as f:
         json.dump({"judge_scores": judge_scores, "sanity_avg": float(np.mean(sanity))}, f, indent=2, ensure_ascii=False)
-    print("Saved results/judge_scores_30.json")
+    ui.status("ok", "Saved results/judge_scores_30.json")
 
 
 if __name__ == "__main__":

@@ -8,39 +8,39 @@ import sys
 import os
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(__file__)))
+import ui
 from src.data_loader import load_all_brands_sample, get_brand_summary
 
 
 def main():
-    print("=" * 60)
-    print("STEP 1: Loading sample of all brands...")
-    print("=" * 60)
+    ui.banner("STEP 1: Loading sample of all brands")
     df = load_all_brands_sample(n_rows=200000, split="training")
 
-    print("\n" + "=" * 60)
-    print("STEP 2: Brand summary (top 15 brands)")
-    print("=" * 60)
+    ui.subheader("STEP 2: Brand summary (top 15 brands)")
     stats = get_brand_summary(df)
-    print(stats.head(15).to_string())
+    rows = [
+        (str(b), s.incoming_count, s.unique_threads)
+        for b, s in stats.head(15).iterrows()
+    ]
+    ui.table(["Brand", "Incoming msgs", "Unique threads"], rows)
 
-    print("\n" + "=" * 60)
-    print("STEP 3: Sample tweets from top brands")
-    print("=" * 60)
+    ui.subheader("STEP 3: Sample tweets from top brands")
     top_brands = stats.head(5).index.tolist()
     for brand in top_brands:
         brand_df = df[(df["author_id"] == brand) & (df["inbound"] == True)]
-        print(f"\n--- {brand} ({len(brand_df)} messages) ---")
+        print(f"\n  --- {brand} ({len(brand_df)} messages) ---")
         samples = brand_df.sample(min(3, len(brand_df)), random_state=42)
         for _, row in samples.iterrows():
-            text = row["text"][:200]
-            print(f"  > {text}")
+            print(f"    > {row['text'][:200]}")
 
-    print("\n" + "=" * 60)
-    print("RECOMMENDATION: Pick a brand with:")
-    print("  - High message count (>500)")
-    print("  - Clear, repeatable patterns")
-    print("  - Manageable complexity")
-    print("=" * 60)
+    ui.subheader("RECOMMENDATION: pick a brand with")
+    ui.kv_pairs(
+        {
+            "High message count": ">500",
+            "Clear patterns": "repeatable, common issues",
+            "Manageable complexity": "few, well-defined intents",
+        }
+    )
 
 
 if __name__ == "__main__":

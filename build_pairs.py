@@ -5,6 +5,8 @@ import json
 import os
 import random
 
+import ui
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 random.seed(42)
 
@@ -13,19 +15,23 @@ CSV_PATH = os.environ.get(
     r"D:\dataset\twcs\twcs.csv",
 )
 
-print("Loading only needed columns from CSV...")
+ui.banner("Extracting Uber pairs")
+ui.status("info", "Loading only needed columns from CSV...")
 df = pd.read_csv(
     CSV_PATH,
     usecols=["tweet_id", "author_id", "inbound", "text", "in_response_to_tweet_id"],
 )
-print(f"Loaded: {len(df)} rows from {CSV_PATH}")
+ui.kv_pairs(
+    {
+        "Rows loaded": f"{len(df):,}",
+        "Source": CSV_PATH,
+    }
+)
 
 uber_out = df[df["author_id"] == "Uber_Support"].copy()
-print(f"Uber agent tweets: {len(uber_out)}")
 
 cust_ids = set(uber_out["in_response_to_tweet_id"].dropna().astype(int))
 cust_msgs = df[(df["tweet_id"].isin(cust_ids)) & (df["inbound"] == True)].copy()
-print(f"Matched customer messages (inbound=True): {len(cust_msgs)}")
 
 uber_reply_map = {}
 for _, row in uber_out.iterrows():
@@ -54,16 +60,25 @@ for _, cust in cust_msgs.iterrows():
                 }
             )
 
-print(f"Total customer-agent pairs: {len(pairs)}")
+ui.subheader("Extraction summary")
+ui.kv_pairs(
+    {
+        "Uber agent tweets": f"{len(uber_out):,}",
+        "Matched customer messages (inbound=True)": f"{len(cust_msgs):,}",
+        "Total customer-agent pairs": f"{len(pairs):,}",
+    }
+)
 
 with open("data/uber_pairs.json", "w") as f:
     json.dump(pairs, f)
-print("Saved to data/uber_pairs.json")
+ui.status("ok", "Saved to data/uber_pairs.json")
 
 samples = random.sample(pairs, min(25, len(pairs)))
-print("\n=== SAMPLE PAIRS ===")
+ui.subheader("Sample pairs")
 for i, p in enumerate(samples, 1):
     cust = p["customer_text"][:150].replace("\n", " ")
     agent = p["agent_text"][:150].replace("\n", " ")
-    print(f"\n{i}. Customer: {cust}")
-    print(f"   Agent:    {agent}")
+    print()
+    ui.status("info", f"Pair #{i}")
+    print(f"    CUSTOMER : {cust}")
+    print(f"    AGENT    : {agent}")

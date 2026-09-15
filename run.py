@@ -13,6 +13,8 @@ import argparse
 import subprocess
 import sys
 
+import ui
+
 
 def main():
     parser = argparse.ArgumentParser(description="Hiver SDE Assignment Pipeline (Uber_Support)")
@@ -44,8 +46,9 @@ def main():
         return
 
     for name, cmd in steps:
-        print(f"\n{'='*60}\n{name}\n{'='*60}")
+        ui.banner(name)
         if subprocess.run(cmd).returncode != 0:
+            ui.status("fail", f"Step failed: {name}")
             sys.exit(f"Step failed: {name}")
 
 

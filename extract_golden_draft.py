@@ -1,5 +1,7 @@
 import json, random, sys, io, os
 
+import ui
+
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8")
 random.seed(42)
 
@@ -32,9 +34,11 @@ with open("golden_set/uber_golden_draft.json", "w", encoding="utf-8") as f:
     json.dump(out, f, ensure_ascii=False, indent=2)
 
 n_labeled = sum(1 for x in out if x["intent"])
-print(f"Total: {len(out)}, already labeled: {n_labeled}")
+ui.banner("Golden draft extracted")
+ui.kv_pairs({"Total sampled": len(out), "Already labeled": n_labeled})
 
 # Print all unlabeled for hand-labeling
-for i, item in enumerate(out):
-    if not item["intent"]:
-        print(f"[{i}] {item['message'][:250].replace(chr(10), ' ')}")
+unlabeled = [i for i, item in enumerate(out) if not item["intent"]]
+ui.subheader(f"Unlabeled messages for hand-labeling ({len(unlabeled)})")
+for i in unlabeled:
+    print(f"[{i}] {out[i]['message'][:250].replace(chr(10), ' ')}")
