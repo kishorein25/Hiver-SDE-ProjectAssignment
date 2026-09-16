@@ -1,0 +1,78 @@
+{
+  "n": 14,
+  "exact_agreement": 0.357,
+  "tolerated_agreement": 0.643,
+  "strict_agreement": 0.5,
+  "samples": [
+    {
+      "idx": 110,
+      "judge": "B",
+      "human": "B"
+    },
+    {
+      "idx": 119,
+      "judge": "B",
+      "human": "A"
+    },
+    {
+      "idx": 45,
+      "judge": "B",
+      "human": "A"
+    },
+    {
+      "idx": 30,
+      "judge": "A",
+      "human": "A"
+    },
+    {
+      "idx": 89,
+      "judge": "B",
+      "human": "A"
+    },
+    {
+      "idx": 114,
+      "judge": "B",
+      "human": "EQUAL"
+    },
+    {
+      "idx": 44,
+      "judge": "A",
+      "human": "B"
+    },
+    {
+      "idx": 83,
+      "judge": "A",
+      "human": "B"
+    },
+    {
+      "idx": 87,
+      "judge": "A",
+      "human": "A"
+    },
+    {
+      "idx": 15,
+      "judge": "B",
+      "human": "EQUAL"
+    },
+    {
+      "idx": 102,
+      "judge": "A",
+      "human": "EQUAL"
+    },
+    {
+      "idx": 81,
+      "judge": "B",
+      "human": "B"
+    },
+    {
+      "idx": 106,
+      "judge": "A",
+      "human": "EQUAL"
+    },
+    {
+      "idx": 24,
+      "judge": "B",
+      "human": "B"
+    }
+  ]
+}

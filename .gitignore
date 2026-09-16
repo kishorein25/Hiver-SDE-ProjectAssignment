@@ -1,8 +1,12 @@
-# Large/generated artifacts - generate locally, do not commit
-data/
-results/
+# Python caches
 __pycache__/
 *.pyc
+
+# Editor / OS clutter
 .DS_Store
 .vscode/
 .idea/
+
+# data/ and results/ ARE committed on purpose so the repo is self-contained:
+# a fresh clone reproduces the headline numbers without re-downloading data.
+# Regenerate any artifact with the build scripts in the README.

@@ -1,0 +1,962 @@
+[
+  {
+    "intent": "driver_behavior",
+    "reply": "@489733 We'll be happy to take a closer look. Send us a note via https://t.co/y4EDPcVZOI so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8742829554966376
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@225864 Thank you for following up. We've received your DMs and a member of our team will be in touch shortly.",
+    "escalate": false,
+    "reply_source_sim": 0.9566647429586742
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@241751 Sorry for the trouble! Please send us a note at https://t.co/QsI1vsdATF and we'll be happy to look into this for you.",
+    "escalate": false,
+    "reply_source_sim": 0.9034854820040459
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@451056 We'd be happy to review, Stephanie. Please DM us your account's email address and we'll follow up from there.",
+    "escalate": false,
+    "reply_source_sim": 0.8489742819272745
+  },
+  {
+    "intent": "account_access",
+    "reply": "@670357 Oh no! Thanks for bringing this to our attention. DM us your account email along with details for assistance.",
+    "escalate": false,
+    "reply_source_sim": 0.9270366933681944
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@142841 Hi there! Our team works to respond to each individual inquiry in the order which they are received. We see your outreach and a member of our team will be following up to assist as soon as possible.",
+    "escalate": false,
+    "reply_source_sim": 0.9038017848195954
+  },
+  {
+    "intent": "account_access",
+    "reply": "@685409 Here to help! Send us a note here; https://t.co/Md7v036OoC and our team will be able to assist!",
+    "escalate": false,
+    "reply_source_sim": 0.8920164992292375
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@554536 That's definitely not what we like to hear. Please send us a DM to confirm if your order was delivered.  https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.8407251942622368
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@195572 We'd be happy to help. Could you please clarify the nature of your issue in DM?",
+    "escalate": false,
+    "reply_source_sim": 0.9079656527010929
+  },
+  {
+    "intent": "safety_concern",
+    "reply": "@377554 We're sorry to hear this was your experience. Contact us via https://t.co/iOszeeHZhQ and we'll be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8368071102589454
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@663586 So sorry about the trouble! Please send us a DM with your email address and more details so we can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8847629631285158
+  },
+  {
+    "intent": "account_access",
+    "reply": "@306439 If you continue to run into trouble please feel free to reach out and we'd be happy to assist further.",
+    "escalate": false,
+    "reply_source_sim": 0.8870650139995472
+  },
+  {
+    "intent": "safety_concern",
+    "reply": "@483003 Here to help!  Please follow the link https://t.co/3h8wdQ4EJK for more info.",
+    "escalate": false,
+    "reply_source_sim": 0.8552505217663534
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@197252 Here to help. Send us a note at https://t.co/a6RfeBkKmr so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.9999999979999995
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@659742 Hi there! Please reach out to https://t.co/zUe0dj6yoX and fill out the 4 boxes at the bottom so we can get in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.9271695152412726
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@678457 Here to help. Send us a note at https://t.co/h840Iouehc so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8710823200450599
+  },
+  {
+    "intent": "account_access",
+    "reply": "@380479 We can definitely take a closer look! Contact us here;  https://t.co/QDn91HzZV0 so we can help.",
+    "escalate": false,
+    "reply_source_sim": 0.8653044505002504
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@788531 We're here to help! Please send us a note here; https://t.co/e8HVorX5rh so our team can assist.",
+    "escalate": false,
+    "reply_source_sim": 0.8811463947239564
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@686057 In an effort to enhance your support experience, and to avoid further confusion we'll be following up any further questions or concerns you may have through in-app support. Thank you so much for your patience and understanding with us.",
+    "escalate": false,
+    "reply_source_sim": 0.9074862549390598
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@586566 We're here to help. Let us know if you have any specific questions, or visit our help site at https://t.co/zUe0dj6yoX  for more info.",
+    "escalate": false,
+    "reply_source_sim": 0.8777562090477453
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@489733 We'll be happy to take a closer look. Send us a note via https://t.co/y4EDPcVZOI so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.904767352431524
+  },
+  {
+    "intent": "uber_eats_order",
+    "reply": "@501950 So sorry to hear about your experience! Can you please contact us via https://t.co/OWBkgXcbMl so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.9223290542379585
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@563134 If you believe you were incorrectly charged a cancellation fee for a trip, please reach out directly to us here: https://t.co/QsI1vsvcif.",
+    "escalate": false,
+    "reply_source_sim": 0.8980381502662509
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@226961 Hello there. Our team works to respond to each individual inquiry in the order which they are received. We see your outreach and a member of our team will be following up to assist as soon as possible.",
+    "escalate": false,
+    "reply_source_sim": 0.8459507835038578
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@401479 We're so sorry for the trouble. Send us a note via https://t.co/DceIRNI6kV so we can assist.",
+    "escalate": false,
+    "reply_source_sim": 0.8925305134148064
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@321069 We hear ya! Thanks for the feedback. We're always working to provide you with new features, so stay tuned.",
+    "escalate": false,
+    "reply_source_sim": 0.8212816120058246
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@198058 We can definitely take a closer look! Please send us your email connected to your account so we can further assist you.",
+    "escalate": false,
+    "reply_source_sim": 0.8900911370455326
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@698622 We're sorry to hear this. Can you please send us a DM of your email address so we can look into this?",
+    "escalate": false,
+    "reply_source_sim": 0.8160656766974614
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@396725 We apologize for the trouble. Find out more info about ETA here: https://t.co/1SlEvwxA6C",
+    "escalate": false,
+    "reply_source_sim": 0.9141396551014336
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@325715 We're ready to look into this, Johnny. Please send us a message, along with details here: https://t.co/biBCTHpjMe so we can follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.9805599117696975
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@429293 Hi, Karan. Thanks for your patience, our team is reviewing your support inquiry now. Please keep an eye on the \"Help\" section for our reply.",
+    "escalate": false,
+    "reply_source_sim": 0.8987947815837075
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@304782 Here to help! Send us a note here, https://t.co/DceIRNI6kV, and our team will follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8779106029146405
+  },
+  {
+    "intent": "lost_item",
+    "reply": "@608790 Hi. Due to our privacy policy, we will have to speak directly to the account holder. Please have them contact us via https://t.co/balq3Eyso6",
+    "escalate": false,
+    "reply_source_sim": 0.9363162970467452
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@169953 We've been in touch via DM!",
+    "escalate": false,
+    "reply_source_sim": 0.8428777427567381
+  },
+  {
+    "intent": "safety_concern",
+    "reply": "@495603 We'll get you sorted out! Please send us a note through https://t.co/zSsqXqzTn7 so we can help.",
+    "escalate": false,
+    "reply_source_sim": 0.89792583635416
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@725351 Here to help. Kindly send a contact information with email address so we can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8770095528229005
+  },
+  {
+    "intent": "account_access",
+    "reply": "@120792 Hi, we're here to help. We have requested that a member of our team follow up with you directly in order to ensure your account information is up to date. Please keep an eye on your email inbox for our outreach. Thank you for your patience and understanding.",
+    "escalate": false,
+    "reply_source_sim": 0.8998011152406017
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@255732 Here to help! Send us a note here; https://t.co/6IqAxVj2X4 and our team will be able to assist!",
+    "escalate": false,
+    "reply_source_sim": 0.9208082941516599
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@475083 Sorry for the trouble! Send us a note here, https://t.co/e8HVorX5rh, and our team will be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8966800781921099
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@760398 Happy to help! Please send us a note at https://t.co/593jusCquh and we'll be happy to look into this for you.",
+    "escalate": false,
+    "reply_source_sim": 0.8936187691125554
+  },
+  {
+    "intent": "uber_eats_order",
+    "reply": "@619994 We'd like to look into this, Giovanni. Please send us a note at  https://t.co/xLLG6cfrJA and a member of our team will follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8516865685303358
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@448904 Here to help, Chef Jeff. Send us a note at https://t.co/t6jnm3ULFw so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.7699454154806675
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@152277 Shouldn't be a problem! We recommend you open your app a little earlier to make sure ETAs are favorable.",
+    "escalate": false,
+    "reply_source_sim": 0.861229832569146
+  },
+  {
+    "intent": "lost_item",
+    "reply": "@640190 We have routed this to the appropriate team who will be in contact within the in-app help section momentarily, Aditya.",
+    "escalate": false,
+    "reply_source_sim": 0.8865801117387418
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@739055 Happy to help, Devin. Please send us a direct message through the link provided.  https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.9556941609185996
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@480164 We've been in touch via DM, Lauren. Please keep an eye out for our response.",
+    "escalate": false,
+    "reply_source_sim": 0.9127028827079916
+  },
+  {
+    "intent": "uber_eats_order",
+    "reply": "@457370 We've received your DM and a member of our team has reached out. Please review your messages for our response.",
+    "escalate": false,
+    "reply_source_sim": 0.810570982840705
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@366258 Hey, you can learn more here: https://t.co/FfS3302V8F.",
+    "escalate": false,
+    "reply_source_sim": 0.9999999979999995
+  },
+  {
+    "intent": "service_feedback",
+    "reply": "@543862 Sorry to hear about this experience, Brad.  To dispute a cancellation fee, contact in app support or here: https://t.co/h840Iouehc.",
+    "escalate": false,
+    "reply_source_sim": 0.8832689398005629
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@518371 We're happy to help out if you have an issue, Rajan. Can you please provide us more details via DM? https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.8805973000728604
+  },
+  {
+    "intent": "safety_concern",
+    "reply": "@228243 We're here to help! Send us a DM with your email address so we can assist.",
+    "escalate": false,
+    "reply_source_sim": 0.8274982841065758
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@761397 We can definitely take a look! Send us a DM with your emai address so we can follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8118532478703514
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@549402 We're always looking to expand. Be sure to keep an eye out for future updates via email or text regarding expansion!",
+    "escalate": false,
+    "reply_source_sim": 0.813035828618494
+  },
+  {
+    "intent": "account_access",
+    "reply": "@626290 Here to help! Send us a note here; https://t.co/Bd0CYyqCXR and our team will be able to help.",
+    "escalate": false,
+    "reply_source_sim": 0.893314242892495
+  },
+  {
+    "intent": "safety_concern",
+    "reply": "@236076 We apologize for the trouble! Send us a note here, https://t.co/y4EDPcVZOI, and our team will be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8662329642757588
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@678452 We're here to help! Send us a note here, https://t.co/tv4psVy8sr and our team will be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.9254486771202651
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@240738 Thank you for that information! A member of our team has been in touch via email, please check your inbox and follow up there directly.",
+    "escalate": false,
+    "reply_source_sim": 0.927017895235047
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@700293 We'd be happy to help out if you have an issue! Please DM us your Uber account email address so we can follow up. https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.8297716663928199
+  },
+  {
+    "intent": "account_access",
+    "reply": "@697204 Hi, Deepak. Please send us a DM so we can connect.  https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.9999999979999997
+  },
+  {
+    "intent": "uber_eats_order",
+    "reply": "@535221 Sorry to hear that, Stefan. Please DM us with your mobile number and more details so we can take a look directly.  https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.846091883053121
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@461871 We've been in touch via DM!",
+    "escalate": false,
+    "reply_source_sim": 0.8891352906837131
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@225864 Thank you for following up. We've received your DMs and a member of our team will be in touch shortly.",
+    "escalate": false,
+    "reply_source_sim": 0.9254017251387268
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@563500 We're here to help, Savannah. Please DM us with the email address linked to your Uber account, so we can connect. https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.8576908642687096
+  },
+  {
+    "intent": "trip_cancellation",
+    "reply": "@358832 We're so sorry for the trouble! Please send us a note here; https://t.co/1xM0TILvAI so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.9126166766326982
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@135336 We're sorry to hear this was your experience. Kindly contact us via https://t.co/aBEgvdNWQN and we'll be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8611375677105206
+  },
+  {
+    "intent": "service_feedback",
+    "reply": "@241751 Sorry for the trouble! Please send us a note at https://t.co/QsI1vsdATF and we'll be happy to look into this for you.",
+    "escalate": false,
+    "reply_source_sim": 0.9141749139432771
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@512466 We're sorry to hear this was your experience. Can you send us a DM with your email address so we can connect?",
+    "escalate": false,
+    "reply_source_sim": 0.9069043311230433
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@228792 Will you please DM us with your email address associated with your account? We'll look into it.",
+    "escalate": false,
+    "reply_source_sim": 0.9054999729525006
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@342692 We're sorry to hear this was your experience. Contact us via https://t.co/Xp8oSaP01X and we'll be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8188598370816633
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@206014 We're here to help. If you could please DM us with the email address linked to your Uber account, we can connect about this matter.",
+    "escalate": false,
+    "reply_source_sim": 0.9050968473983585
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@356154 We're here to help! Send us a DM with your email address and more details so we can follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8532040746889317
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@583288 We see that you've reached out directly to our support team via in-app, and we will continue communications there moving forward.",
+    "escalate": false,
+    "reply_source_sim": 0.8422569289886053
+  },
+  {
+    "intent": "account_access",
+    "reply": "@627697 Hi there! Please send us a note at https://t.co/KJkNyjDcOK and we'll be happy to look into this for you.",
+    "escalate": false,
+    "reply_source_sim": 0.8695435483653808
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@523086 Here to further assist you! Send us a DM with your email address so we can follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8975961664235316
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@692182 Our team has recently responded via email. Please reply there if you have additional questions!",
+    "escalate": false,
+    "reply_source_sim": 0.931021355521586
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@116291 We're here to help! Send us a DM with your email address so we can follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8958576045588792
+  },
+  {
+    "intent": "safety_concern",
+    "reply": "@451056 We'd be happy to review, Stephanie. Please DM us your account's email address and we'll follow up from there.",
+    "escalate": false,
+    "reply_source_sim": 0.9170584902996834
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@481874 For more info about where is UberEATS available, click here; https://t.co/bl5B9dVLvX",
+    "escalate": false,
+    "reply_source_sim": 0.8053631578035214
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@796425 Here to help! Send us a note here https://t.co/h840Iouehc so we can further assist.",
+    "escalate": false,
+    "reply_source_sim": 0.904778153992953
+  },
+  {
+    "intent": "trip_cancellation",
+    "reply": "@700293 We'd be happy to help out if you have an issue! Please DM us your Uber account email address so we can follow up. https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.9053766504638862
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@198567 Hi, Manoj. We've followed up via DM.",
+    "escalate": false,
+    "reply_source_sim": 0.9202195147574013
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@258091 Here to help! Send us a note via https://t.co/lzIGTuu2al so our team can get in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8638136403136136
+  },
+  {
+    "intent": "account_access",
+    "reply": "@542517 Hi there! At this moment, we don't offer phone support for these issues. Visit this link; https://t.co/OhfgxSAY58 so our team can assist.",
+    "escalate": false,
+    "reply_source_sim": 0.8547757199985154
+  },
+  {
+    "intent": "safety_concern",
+    "reply": "@586566 We're here to help. Let us know if you have any specific questions, or visit our help site at https://t.co/zUe0dj6yoX  for more info.",
+    "escalate": false,
+    "reply_source_sim": 0.9037014332824368
+  },
+  {
+    "intent": "account_access",
+    "reply": "@476686 Happy to help! Send us a DM with your email address and our team will follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8747926134223227
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@561623 We see that you've reached out directly to our support team via in-app, and we will continue communications there moving forward.",
+    "escalate": false,
+    "reply_source_sim": 0.8373776906394226
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@157675 Hello, Mariam. It appears that our team has followed up with you via email regarding this matter. If you have further questions or concerns, please reply to the email thread and we'll be sure to follow up with you.",
+    "escalate": false,
+    "reply_source_sim": 0.9999999979999986
+  },
+  {
+    "intent": "service_feedback",
+    "reply": "@147243 We definitely understand the sense of urgency here, and we assure you that our support team works through these inquiries as quickly as possible. Thank you for your patience with us so far, and be sure to keep an eye out for a follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.9846430437657712
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@240991 Here to help! Send us a note here https://t.co/fS660s7JFo so we can assist.",
+    "escalate": false,
+    "reply_source_sim": 0.9172487536399722
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@251928 According to our privacy policy, we will have to speak directly to the account holder. Please have them contact us via https://t.co/balq3Eyso6 so our team can assist you!",
+    "escalate": false,
+    "reply_source_sim": 0.8992170100403435
+  },
+  {
+    "intent": "account_access",
+    "reply": "@303989 Please send us a note here: https://t.co/BDlHSjUF9c, and we'll be able to assist you in regaining access to your account, thanks!",
+    "escalate": false,
+    "reply_source_sim": 0.8325275988009413
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@512980 Sorry for the trouble! Send us a note here, https://t.co/1xM0TILvAI, and our team will be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8385302395690312
+  },
+  {
+    "intent": "trip_cancellation",
+    "reply": "@757923 Here to help! Follow up here; https://t.co/SjsQQ8ofRq, and our team will connect right away.",
+    "escalate": false,
+    "reply_source_sim": 0.8623190337594677
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@349179 We have received your DM and will connect with you there shortly. Thanks!",
+    "escalate": false,
+    "reply_source_sim": 0.9999999979999998
+  },
+  {
+    "intent": "account_access",
+    "reply": "@682773 Happy to take a look! Send us a note via https://t.co/BDlHSjUF9c so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8597333975325692
+  },
+  {
+    "intent": "trip_cancellation",
+    "reply": "@266284 Happy to follow up! Please send us a DM with your email address so we can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8829357647481537
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@236076 We apologize for the trouble! Send us a note here, https://t.co/y4EDPcVZOI, and our team will be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8934241625493649
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@368732 We've followed up via DM. Please check your messages for an update.",
+    "escalate": false,
+    "reply_source_sim": 0.8105860208963713
+  },
+  {
+    "intent": "uber_eats_order",
+    "reply": "@304241 Sorry to hear about this. Please DM us your email address so we can look into this for you.",
+    "escalate": false,
+    "reply_source_sim": 0.8442552298672873
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@527747 Sorry for the trouble! Send us a note via https://t.co/nFTc4ODH3P so we can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.816577441716514
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@720820 Here to help! Follow up here; https://t.co/JyzdtQmyxT, and our team will connect right away.",
+    "escalate": false,
+    "reply_source_sim": 0.917685462620224
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@241751 Sorry for the trouble! Please send us a note at https://t.co/QsI1vsdATF and we'll be happy to look into this for you.",
+    "escalate": false,
+    "reply_source_sim": 0.8775194085194189
+  },
+  {
+    "intent": "trip_cancellation",
+    "reply": "@703736 Sorry for the trouble! Send us a note here, https://t.co/u3MyknJaaN, and our team will be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8377065916386647
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@323754 We're working hard to expand our service area. Stay tuned to our website for updates: https://t.co/Mf9vzZ0uru",
+    "escalate": false,
+    "reply_source_sim": 0.8354705984203461
+  },
+  {
+    "intent": "lost_item",
+    "reply": "@159581 This is concerning. Please DM us your Uber account information so we can follow up. https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.8982308083218776
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@504461 Happy to help! Please reach out to https://t.co/zUe0dj6yoX and fill out the 4 boxes at the bottom so we can get in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.9999999979999997
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@437582 Hey Aishwarya! Can you please DM us with your account email so we can follow up?  Thank you",
+    "escalate": false,
+    "reply_source_sim": 0.9999999979999998
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@229331 Here to help! Send us a note via https://t.co/6IqAxVj2X4 so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8137714299928323
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@454583 That's not ok! Contact us via https://t.co/a6RfeBkKmr so we can assist.",
+    "escalate": false,
+    "reply_source_sim": 0.9175902964717412
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@447303 Happy to help! Send us a DM with your email address and our team will follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8139295189645817
+  },
+  {
+    "intent": "uber_eats_order",
+    "reply": "@560419 Here to help! Kindly send us a note here; https://t.co/h3vAjBLlBH so our team can assist.",
+    "escalate": false,
+    "reply_source_sim": 0.9096529029416937
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@802619 We've sent you a DM.",
+    "escalate": false,
+    "reply_source_sim": 0.8770261406589034
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@809766 Sorry to hear this was your experience! Please send us a note at https://t.co/K05RdmK3t4 so our team can connect right away.",
+    "escalate": false,
+    "reply_source_sim": 0.9049484812882236
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@761943 We're here to help! Send us a DM with your email address so we can assist.",
+    "escalate": false,
+    "reply_source_sim": 0.8879303520166777
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@605295 Please send us a DM with your email and phone number linked to your account. Along with details on what was missing from your order.",
+    "escalate": false,
+    "reply_source_sim": 0.8439128817668429
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@599934 Hello there! Please connect with us here; https://t.co/EbMvJOAMRB so that we may be of further assistance and look into this issue for you.",
+    "escalate": false,
+    "reply_source_sim": 0.8632405967459438
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@675730 Here to help, Amanda! Please visit here; https://t.co/LkCHtjv0c5 regarding your concern.",
+    "escalate": false,
+    "reply_source_sim": 0.8586547411749182
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@285896 Here to help. Send us a note at https://t.co/ZKt0NHVs3P so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8401146587940341
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@539863 That doesn't sound right, Jeff. Please DM us the email and phone number linked to your account so we can follow up. https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.8967047512838997
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@249685 We're here to help! Can you send us a DM with your email address so we can connect?",
+    "escalate": false,
+    "reply_source_sim": 0.8797938598710873
+  },
+  {
+    "intent": "account_access",
+    "reply": "@697204 Hi, Deepak. Please send us a DM so we can connect.  https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.9032047836383831
+  },
+  {
+    "intent": "lost_item",
+    "reply": "@392182 Happy to connect. Send us a note here; https://t.co/oY5vj3NqP3, and we'll be in touch!",
+    "escalate": false,
+    "reply_source_sim": 0.898726359520983
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@348162 Can you DM us your email address associated with your Uber account so we can follow up?",
+    "escalate": false,
+    "reply_source_sim": 0.8913328524327576
+  },
+  {
+    "intent": "trip_cancellation",
+    "reply": "@363025 We apologize for the trouble! Send us a DM with your email address with additional details and we'll follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8536770746319238
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@759040 Our support agents respond to inquires in the order they're received. We know how time-sensitive this issue is for you. Hang-tight for us!",
+    "escalate": false,
+    "reply_source_sim": 0.883109875878136
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@338270 Here to help, Brojesh! Send us a DM with your account email address + order details and we'll be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8744465922670772
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@621906 In an effort to enhance your support experience, and to avoid further confusion we'll be following up any further questions or concerns you may have through in-app support. Thank you so much for your patience.",
+    "escalate": false,
+    "reply_source_sim": 0.968952234038782
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@422580 We're here to help. We just sent you a DM.",
+    "escalate": false,
+    "reply_source_sim": 0.8948831806853057
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@686496 We're so sorry about that! Please DM us your email address so we can further assist.",
+    "escalate": false,
+    "reply_source_sim": 0.8766871544869625
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@549402 We're always looking to expand. Be sure to keep an eye out for future updates via email or text regarding expansion!",
+    "escalate": false,
+    "reply_source_sim": 0.8251371131577075
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@697933 That's not what we like to hear. Please send us a note here - https://t.co/OWBkgXcbMl so we can assist.",
+    "escalate": false,
+    "reply_source_sim": 0.8292367089903055
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@751043 Here to help! Contact us via https://t.co/tv4psVy8sr so we can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.9102417059022898
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@563500 We're here to help, Savannah. Please DM us with the email address linked to your Uber account, so we can connect. https://t.co/sd7yH5jmbJ",
+    "escalate": false,
+    "reply_source_sim": 0.8630883382139415
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@658546 Here to help. Send us a note at https://t.co/593jusCquh so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8550168222356762
+  },
+  {
+    "intent": "lost_item",
+    "reply": "@190910 Send us a note here; https://t.co/RY2a0oDSbF, and our team will be able to help.",
+    "escalate": false,
+    "reply_source_sim": 0.8764032284813401
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@349738 We're sorry to hear this was your experience. We're now reviewing your email and will be in touch shortly. We appreciate your patience!",
+    "escalate": false,
+    "reply_source_sim": 0.8812523108901281
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@730716 Thanks for reaching out, Sabrina. If you're planning an event and would like to look into getting promo codes for it, you can learn all about UberEVENTS on our helpful resource here https://t.co/J8KYZ9MKGK.",
+    "escalate": false,
+    "reply_source_sim": 0.8245330836788849
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@324419 Happy to help, Victor. Please go here https://t.co/dInR3racif, so we can follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.8844296206436981
+  },
+  {
+    "intent": "account_access",
+    "reply": "@695851 We've been overwhelmed by demand! Supply is limited, but please keep trying.",
+    "escalate": false,
+    "reply_source_sim": 0.80677257833467
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@388746 We've been in touch via DM!",
+    "escalate": false,
+    "reply_source_sim": 0.9999999979999993
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@297971 We just got back to you via DM, Airien.",
+    "escalate": false,
+    "reply_source_sim": 0.8527109789933253
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@130518 Here to help! Send us a note here; https://t.co/dInR3racif and our team will be able to assist!",
+    "escalate": false,
+    "reply_source_sim": 0.8773361667056614
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@796425 Here to help! Send us a note here https://t.co/h840Iouehc so we can further assist.",
+    "escalate": false,
+    "reply_source_sim": 0.8939566101301523
+  },
+  {
+    "intent": "app_technical",
+    "reply": "@249685 We're here to help! Can you send us a DM with your email address so we can connect?",
+    "escalate": false,
+    "reply_source_sim": 0.8608646506387293
+  },
+  {
+    "intent": "account_access",
+    "reply": "@802027 Here to help! Please send us a note via  https://t.co/Md7v036OoC  so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.889233263098783
+  },
+  {
+    "intent": "uber_eats_order",
+    "reply": "@236459 Sorry for the trouble! Please send us a DM with your email address and phone number so we can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.884597968213736
+  },
+  {
+    "intent": "service_feedback",
+    "reply": "@517592 Happy to help look further into this, Dan! Please reach out to us here: https://t.co/zUe0dj6yoX so we can follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.9142773095737174
+  },
+  {
+    "intent": "account_access",
+    "reply": "@517592 Happy to help look further into this, Dan! Please reach out to us here: https://t.co/zUe0dj6yoX so we can follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.9192909346120157
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@275286 We're sorry to hear this was your experience. Contact us via https://t.co/fS660rQ8NQ and we'll be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8236607055587639
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@211661 We apologize for the trouble, Nesa! Can you please contact us via https://t.co/h840Iouehc so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.885742278856371
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@266284 Happy to follow up! Please send us a DM with your email address so we can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.9076165601565055
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@453341 We appreciate the feedback you've provided here and will take note, Shane.",
+    "escalate": false,
+    "reply_source_sim": 0.8756629270313463
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@658546 Here to help. Send us a note at https://t.co/593jusCquh so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.915987035733747
+  },
+  {
+    "intent": "account_access",
+    "reply": "@190910 Send us a note here; https://t.co/RY2a0oDSbF, and our team will be able to help.",
+    "escalate": false,
+    "reply_source_sim": 0.8614707616055014
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@498915 We take this very seriously. Please send us a DM with your email address so we can connect ASAP.",
+    "escalate": false,
+    "reply_source_sim": 0.9183234486080553
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@253936 Here to help. Send us a note at https://t.co/593jusCquh so our team can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.9271378543580641
+  },
+  {
+    "intent": "driver_behavior",
+    "reply": "@159131 Here to help! Please send us a note via https://t.co/z8NNR56eyf so we can connect.",
+    "escalate": false,
+    "reply_source_sim": 0.8984761150994586
+  },
+  {
+    "intent": "trip_fare_billing",
+    "reply": "@319121 Happy to help. Send us a DM with your account email address and we'll be in touch.",
+    "escalate": false,
+    "reply_source_sim": 0.8638931676910019
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@580554 We're here to help. We just sent you a DM.",
+    "escalate": false,
+    "reply_source_sim": 0.999999998000001
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "@180753 Here to help! Send us a note here, https://t.co/u3MyknJaaN and our team will follow up.",
+    "escalate": false,
+    "reply_source_sim": 0.646474725599424
+  }
+]

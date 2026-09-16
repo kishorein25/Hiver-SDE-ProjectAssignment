@@ -1,0 +1,245 @@
+{
+  "judge_scores": [
+    {
+      "idx": 131,
+      "judge": 1,
+      "similarity": 0.9095683579540764,
+      "customer": "@Uber_Support Hi I updated my new drivers license and im just waiting for the approval to drive agai",
+      "agent": "@751043 Here to help! Contact us via https://t.co/tv4psVy8sr so we can connect.",
+      "reference": "@537959 We're here to help! Send us a note via https://t.co/LDXEzScUGp so our team can connect."
+    },
+    {
+      "idx": 148,
+      "judge": 1,
+      "similarity": 0.9707011335415882,
+      "customer": "So.... My @115873 driver put me out the car on my way to the airport bc she said I was going to far ",
+      "agent": "@275286 We're sorry to hear this was your experience. Contact us via https://t.co/fS660rQ8NQ and we'll be in touch.",
+      "reference": "@422779 We're sorry to hear this was your experience. Contact us via https://t.co/iOszeeHZhQ and we'll be in touch."
+    },
+    {
+      "idx": 86,
+      "judge": 1,
+      "similarity": 0.7090849271895368,
+      "customer": "@Uber_Support done",
+      "agent": "@157675 Hello, Mariam. It appears that our team has followed up with you via email regarding this matter. If you have fu",
+      "reference": "@633687 Sorry you were having trouble, Ryan. The restaurant may have just been offline for a while. Let us know if you h"
+    },
+    {
+      "idx": 42,
+      "judge": 1,
+      "similarity": 0.6999488121319049,
+      "customer": "@115873 Carpool option not coming to book ride in early morning. Facing too much of inconvenience. O",
+      "agent": "@152277 Shouldn't be a problem! We recommend you open your app a little earlier to make sure ETAs are favorable.",
+      "reference": "@407353 Here to help! please send us a note via https://t.co/u3MyknJaaN so our team can connect."
+    },
+    {
+      "idx": 30,
+      "judge": 1,
+      "similarity": 0.7595301726751025,
+      "customer": "@Uber_Support I already sent a damaged report.  They want to refund one item.  I told them i should ",
+      "agent": "@429293 Hi, Karan. Thanks for your patience, our team is reviewing your support inquiry now. Please keep an eye on the \"",
+      "reference": "@467358 That doesn't sound right. Can you please send us a DM with your email address so we can look into this with you?"
+    },
+    {
+      "idx": 123,
+      "judge": 1,
+      "similarity": 0.8095807548071634,
+      "customer": "@115873 cancelled the request, got the same car that apparently STILL HASN'T MOVED and isn't picking",
+      "agent": "@363025 We apologize for the trouble! Send us a DM with your email address with additional details and we'll follow up.",
+      "reference": "@349445 Here to help! Send us a note here; https://t.co/FDTXFthjTD and our team will be able to assist!"
+    },
+    {
+      "idx": 93,
+      "judge": 1,
+      "similarity": 0.9999999989999993,
+      "customer": "@Uber_Support just used uber and found out that i didnt get my uber code when i signed up so wheres ",
+      "agent": "@349179 We have received your DM and will connect with you there shortly. Thanks!",
+      "reference": "@349179 We have received your DM and will connect with you there shortly. Thanks!"
+    },
+    {
+      "idx": 69,
+      "judge": 1,
+      "similarity": 0.7940341520196411,
+      "customer": "@Uber_Support hi. can someone DM me asap.  I ve never used you, my debit card has been cloned and ta",
+      "agent": "@206014 We're here to help. If you could please DM us with the email address linked to your Uber account, we can connect",
+      "reference": "@422564 Here to help! Contact us via https://t.co/dInR3racif so we can connect."
+    },
+    {
+      "idx": 151,
+      "judge": 1,
+      "similarity": 0.7685240527436552,
+      "customer": "@115877 has a bug where we couldn't contact the driver, @Uber_Support gave us the same # and sent us",
+      "agent": "@453341 We appreciate the feedback you've provided here and will take note, Shane.",
+      "reference": "@548162 Let's take a further look into this. Please send us a DM with your email and phone number linked to your account"
+    },
+    {
+      "idx": 85,
+      "judge": 1,
+      "similarity": 0.765864743222361,
+      "customer": "Hey @115873 so you charge people $150 for allegedly puking in a car without evidence? Not even a pic",
+      "agent": "@561623 We see that you've reached out directly to our support team via in-app, and we will continue communications ther",
+      "reference": "@685658 Here to help! Send us a note here https://t.co/a6RfeBkKmr so we can further assist."
+    },
+    {
+      "idx": 9,
+      "judge": 1,
+      "similarity": 0.7105305434132493,
+      "customer": "@115873 how do i report an accident .my vehicle was hit by an uber driver in tulare",
+      "agent": "@377554 We're sorry to hear this was your experience. Contact us via https://t.co/iOszeeHZhQ and we'll be in touch.",
+      "reference": "@207759 We take this very seriously! Please send us a DM with your email address so we can connect ASAP."
+    },
+    {
+      "idx": 119,
+      "judge": 1,
+      "similarity": 0.8027749424597915,
+      "customer": "@Uber_Support Bro I still didn’t get my promo for referring.....",
+      "agent": "@249685 We're here to help! Can you send us a DM with your email address so we can connect?",
+      "reference": "@144382 It seems a member of our team has reached out to you. Please check your email and follow up with them there."
+    },
+    {
+      "idx": 124,
+      "judge": 1,
+      "similarity": 0.7385333624737326,
+      "customer": "@Uber_Support Very frustrating and stressful when needing to get a train to connect to a flight",
+      "agent": "@759040 Our support agents respond to inquires in the order they're received. We know how time-sensitive this issue is f",
+      "reference": "@181728 We're sorry to hear of your experience. Be sure to visit us at the link provided so our team can take appropriat"
+    },
+    {
+      "idx": 100,
+      "judge": 1,
+      "similarity": 0.9250034869181576,
+      "customer": "@115873 I ordered an Uber on Friday night from Birmingham, we were stood outside our hotel waiting a",
+      "agent": "@720820 Here to help! Follow up here; https://t.co/JyzdtQmyxT, and our team will connect right away.",
+      "reference": "@263148 Here to help! Send us a note here, https://t.co/h840Iouehc and our team will follow up."
+    },
+    {
+      "idx": 138,
+      "judge": 1,
+      "similarity": 0.7204959586012308,
+      "customer": "I have no emails. Fucking Christ @115877 lose all the AUTOMATED SHIT people have to go through. I sw",
+      "agent": "@695851 We've been overwhelmed by demand! Supply is limited, but please keep trying.",
+      "reference": "@328953 Please DM us the email address linked to your account so we can further assist. https://t.co/sd7yH5jmbJ"
+    },
+    {
+      "idx": 115,
+      "judge": 1,
+      "similarity": 0.836359828128571,
+      "customer": "@Uber_Support So I wont be able to remove my card unless I add a new one. Wat is d sense of having a",
+      "agent": "@599934 Hello there! Please connect with us here; https://t.co/EbMvJOAMRB so that we may be of further assistance and lo",
+      "reference": "@775691 Sorry to hear about the trouble. Please DM us the email address connected with your account profile so we can fo"
+    },
+    {
+      "idx": 41,
+      "judge": 1,
+      "similarity": 0.6800226071723297,
+      "customer": "@115873 is their a discount code for the Astros?",
+      "agent": "@448904 Here to help, Chef Jeff. Send us a note at https://t.co/t6jnm3ULFw so our team can connect.",
+      "reference": "@470702 Not at the moment! But you can always share your referral code with friends so you can rack up free rides when t"
+    },
+    {
+      "idx": 15,
+      "judge": 1,
+      "similarity": 0.9237879067268315,
+      "customer": "@115873 one of the driver cancel the ride saying there us traffic jam !!!! I want to complain",
+      "agent": "@678457 Here to help. Send us a note at https://t.co/h840Iouehc so our team can connect.",
+      "reference": "@470205 We're here to help! Send us a note via https://t.co/e8HVorX5rh so our team can assist."
+    },
+    {
+      "idx": 11,
+      "judge": 1,
+      "similarity": 0.7024255974239517,
+      "customer": "@Uber_Support \nJust reset my account. Hoe many times i will fill the same form. Or give a call. I fa",
+      "agent": "@306439 If you continue to run into trouble please feel free to reach out and we'd be happy to assist further.",
+      "reference": "@740985 We have received your DM, Shailendra, and will be in contact with you there shortly."
+    },
+    {
+      "idx": 54,
+      "judge": 1,
+      "similarity": 0.625332526907799,
+      "customer": "@Uber_Support I understand but to get to the back of my neighborhood you have to pass my house to ge",
+      "agent": "@236076 We apologize for the trouble! Send us a note here, https://t.co/y4EDPcVZOI, and our team will be in touch.",
+      "reference": "@652595 This is entirely possible that only part of a neighborhood would be included in our delivery area. We do hope to"
+    },
+    {
+      "idx": 94,
+      "judge": 1,
+      "similarity": 0.9173723398861071,
+      "customer": "@Uber_Support someone keeps trying to hack into my account. Can you disable my account or block the ",
+      "agent": "@682773 Happy to take a look! Send us a note via https://t.co/BDlHSjUF9c so our team can connect.",
+      "reference": "@722546 Happy to help! Send us a note here, https://t.co/kGIXas5Cxg, and our team will follow up."
+    },
+    {
+      "idx": 22,
+      "judge": 1,
+      "similarity": 0.7116908394879523,
+      "customer": "@Uber_Support my current driver wants me to cancel the trip because he can't pick me up and i will b",
+      "agent": "@563134 If you believe you were incorrectly charged a cancellation fee for a trip, please reach out directly to us here:",
+      "reference": "@650758 Here to help! Send us a note at https://t.co/e8HVorX5rh so our team can connect."
+    },
+    {
+      "idx": 26,
+      "judge": 1,
+      "similarity": 0.5624197893659221,
+      "customer": "@115873 Support Services are awful. I am so upset w/ the extra $8 in fees and customer service sent ",
+      "agent": "This request is outside Uber's support scope. It won't be answered automatically and has been routed to a human agent (a",
+      "reference": "@733223 We're here to help! Send us a DM with your email address so we can connect."
+    },
+    {
+      "idx": 2,
+      "judge": 1,
+      "similarity": 0.8208533529659403,
+      "customer": "@115873 why are you guys reserving money for uber rides I did not request for?!😠",
+      "agent": "@241751 Sorry for the trouble! Please send us a note at https://t.co/QsI1vsdATF and we'll be happy to look into this for",
+      "reference": "@138406 Here to help! Send us a note via; https://t.co/dInR3racif so our team can connect."
+    },
+    {
+      "idx": 135,
+      "judge": 1,
+      "similarity": 0.6145191765595133,
+      "customer": "Hey @2006 @115873 Your driver completely screwed up 3x &amp; customer service in app stinks! My frie",
+      "agent": "This request is outside Uber's support scope. It won't be answered automatically and has been routed to a human agent (a",
+      "reference": "@240982 We're sorry to hear this was your experience. Please send us a DM (Direct Message) with your email address with "
+    },
+    {
+      "idx": 58,
+      "judge": 1,
+      "similarity": 0.7465572329829845,
+      "customer": "@Uber_Support it’s __email__",
+      "agent": "@697204 Hi, Deepak. Please send us a DM so we can connect.  https://t.co/sd7yH5jmbJ",
+      "reference": "@744311 For your privacy we'd recommend connecting with us in DM and deleting any personal details you may have posted."
+    },
+    {
+      "idx": 158,
+      "judge": 1,
+      "similarity": 0.82930991758038,
+      "customer": "@Uber_Support thank you",
+      "agent": "@580554 We're here to help. We just sent you a DM.",
+      "reference": "@678784 It seems a member of our team has reached out to you. Please check your email and follow up with them there."
+    },
+    {
+      "idx": 52,
+      "judge": 1,
+      "similarity": 0.783524528757421,
+      "customer": "Again! Third time's the charm, @115873 -- time to give @115879 a chance. https://t.co/HuuwfgJtPV",
+      "agent": "@549402 We're always looking to expand. Be sure to keep an eye out for future updates via email or text regarding expans",
+      "reference": "@420507 Here to help! Please reach out to https://t.co/zUe0dj6yoX and fill out the boxes at the bottom so we can get in "
+    },
+    {
+      "idx": 154,
+      "judge": 1,
+      "similarity": 0.7691976573081794,
+      "customer": "@Uber_Support I am very scared for my life after my uber experience! One of your drivers wouldn't un",
+      "agent": "@498915 We take this very seriously. Please send us a DM with your email address so we can connect ASAP.",
+      "reference": "@188727 That's not ok! Can you please reach out via https://t.co/fS660rQ8NQ so our team can take a look?"
+    },
+    {
+      "idx": 130,
+      "judge": 1,
+      "similarity": 0.8083465866904501,
+      "customer": "refund now for taking advantage of drunk me @115873 https://t.co/ROcKfBCD0k",
+      "agent": "@697933 That's not what we like to hear. Please send us a note here - https://t.co/OWBkgXcbMl so we can assist.",
+      "reference": "@694530 Here to help! Send us a note here, https://t.co/1xM0TILvAI, and our team will follow up."
+    }
+  ],
+  "sanity_avg": 1.0
+}

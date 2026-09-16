@@ -1,0 +1,802 @@
+[
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  },
+  {
+    "intent": "general_inquiry",
+    "reply": "We're here to help! Send us a note.",
+    "escalate": false
+  }
+]

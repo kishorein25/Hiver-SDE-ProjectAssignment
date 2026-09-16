@@ -1,0 +1,60 @@
+{
+  "samples": [
+    {
+      "idx": 110,
+      "judge": "B"
+    },
+    {
+      "idx": 119,
+      "judge": "B"
+    },
+    {
+      "idx": 45,
+      "judge": "B"
+    },
+    {
+      "idx": 30,
+      "judge": "A"
+    },
+    {
+      "idx": 89,
+      "judge": "B"
+    },
+    {
+      "idx": 114,
+      "judge": "B"
+    },
+    {
+      "idx": 44,
+      "judge": "A"
+    },
+    {
+      "idx": 83,
+      "judge": "A"
+    },
+    {
+      "idx": 87,
+      "judge": "A"
+    },
+    {
+      "idx": 15,
+      "judge": "B"
+    },
+    {
+      "idx": 102,
+      "judge": "A"
+    },
+    {
+      "idx": 81,
+      "judge": "B"
+    },
+    {
+      "idx": 106,
+      "judge": "A"
+    },
+    {
+      "idx": 24,
+      "judge": "B"
+    }
+  ]
+}

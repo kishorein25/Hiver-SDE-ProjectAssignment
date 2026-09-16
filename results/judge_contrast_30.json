@@ -1,0 +1,129 @@
+{
+  "n": 30,
+  "wins": 17,
+  "ties": 0,
+  "losses": 13,
+  "win_or_tie": 0.5666666666666667,
+  "details": [
+    {
+      "idx": 131,
+      "verdict": "B"
+    },
+    {
+      "idx": 148,
+      "verdict": "A"
+    },
+    {
+      "idx": 86,
+      "verdict": "B"
+    },
+    {
+      "idx": 42,
+      "verdict": "A"
+    },
+    {
+      "idx": 30,
+      "verdict": "A"
+    },
+    {
+      "idx": 123,
+      "verdict": "B"
+    },
+    {
+      "idx": 93,
+      "verdict": "A"
+    },
+    {
+      "idx": 69,
+      "verdict": "A"
+    },
+    {
+      "idx": 151,
+      "verdict": "B"
+    },
+    {
+      "idx": 85,
+      "verdict": "B"
+    },
+    {
+      "idx": 9,
+      "verdict": "A"
+    },
+    {
+      "idx": 119,
+      "verdict": "B"
+    },
+    {
+      "idx": 124,
+      "verdict": "B"
+    },
+    {
+      "idx": 100,
+      "verdict": "A"
+    },
+    {
+      "idx": 138,
+      "verdict": "B"
+    },
+    {
+      "idx": 115,
+      "verdict": "A"
+    },
+    {
+      "idx": 41,
+      "verdict": "A"
+    },
+    {
+      "idx": 15,
+      "verdict": "B"
+    },
+    {
+      "idx": 11,
+      "verdict": "A"
+    },
+    {
+      "idx": 54,
+      "verdict": "A"
+    },
+    {
+      "idx": 94,
+      "verdict": "A"
+    },
+    {
+      "idx": 22,
+      "verdict": "A"
+    },
+    {
+      "idx": 26,
+      "verdict": "A"
+    },
+    {
+      "idx": 2,
+      "verdict": "A"
+    },
+    {
+      "idx": 135,
+      "verdict": "A"
+    },
+    {
+      "idx": 58,
+      "verdict": "B"
+    },
+    {
+      "idx": 158,
+      "verdict": "B"
+    },
+    {
+      "idx": 52,
+      "verdict": "B"
+    },
+    {
+      "idx": 154,
+      "verdict": "B"
+    },
+    {
+      "idx": 130,
+      "verdict": "A"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "our_agent": {
+    "intent_accuracy": 0.475,
+    "escalation": {
+      "tp": 12,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.8571428571428571,
+      "recall": 1.0,
+      "f1": 0.923076923076923
+    },
+    "reply_grounding_sim": {
+      "mean": 0.8141949593736207,
+      "pct_ge_0.7": 0.9375,
+      "pct_ge_0.8": 0.5625
+    },
+    "reply_avg_retrieval_sim": 0.884598767828108
+  },
+  "trivial": {
+    "intent_accuracy": 0.2125,
+    "escalation": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 12,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0
+    },
+    "reply_grounding_sim": {
+      "mean": 0.6864231552487161,
+      "pct_ge_0.7": 0.45,
+      "pct_ge_0.8": 0.03125
+    },
+    "reply_avg_retrieval_sim": 0.0
+  },
+  "simple": {
+    "intent_accuracy": 0.48125,
+    "escalation": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 12,
+      "precision": 0,
+      "recall": 0.0,
+      "f1": 0
+    },
+    "reply_grounding_sim": {
+      "mean": 0.8141949593736207,
+      "pct_ge_0.7": 0.9375,
+      "pct_ge_0.8": 0.5625
+    },
+    "reply_avg_retrieval_sim": 0.884598767828108
+  }
+}
