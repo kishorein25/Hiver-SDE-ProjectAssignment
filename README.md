@@ -58,7 +58,25 @@ steps are deterministic (fixed seeds) and reproducible in under 15 minutes.
    **http://localhost:8000** locally, or click the forwarded-port "Globe" icon to get a
    **public URL** you can share with anyone.
 
-### Option B — Run it locally
+### Option C — Any user, their own machine (one command)
+
+Just clone the repo and run one command — it installs deps, checks Ollama, pulls the models,
+and starts the dashboard locally on that machine:
+
+```bash
+git clone https://github.com/kishorein25/Hiver-SDE-ProjectAssignment.git
+cd Hiver-SDE-ProjectAssignment
+
+pip install -r requirements.txt   # or let start.py do it
+python start.py                   # → http://localhost:8000  (local-only)
+# or
+python start.py --interact        # terminal chat instead
+```
+
+> Requires: Python 3.10+ and [Ollama](https://ollama.com) installed once. Everything runs on
+> that user's own machine — nothing leaves their system.
+
+### Option B — Run it locally (manual)
 
 Prerequisites: **Python 3.10+** and **[Ollama](https://ollama.com)** (local model runner).
 
@@ -147,6 +165,7 @@ Ran `python run_eval.py` on 2026-09-21 → identical numbers to the committed
 .
 ├── README.md                  ← THIS file: single source of truth (how to run, report, decisions, FAQ)
 ├── run.py                     one entry point → runs the whole pipeline:  python run.py --all
+├── start.py                   ONE-COMMAND local setup for any user (deps + Ollama + models + dashboard)
 ├── interact.py                terminal chat with the live agent
 ├── web_server.py              web dashboard + real agent API  (POST /api/chat)
 ├── test_agent.py              5-message smoke test (~30 s)
