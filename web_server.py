@@ -92,6 +92,9 @@ def api_chat():
 def main():
     parser = argparse.ArgumentParser(description="Uber_Support dashboard + live agent API")
     parser.add_argument("--port", type=int, default=8000)
+    parser.add_argument("--host", default="127.0.0.1",
+                        help="bind address (use 0.0.0.0 to let other machines on your "
+                             "network / public tunnels reach the dashboard)")
     parser.add_argument("--no-preload", action="store_true",
                         help="build the agent on first chat instead of at startup")
     args = parser.parse_args()
@@ -100,8 +103,8 @@ def main():
         print("Pre-loading agent (embeddings, ~30-60s starting in background)...")
         threading.Thread(target=preload_agent, daemon=True).start()
 
-    print("Dashboard: http://localhost:%d  (Ctrl+C to stop)" % args.port)
-    app.run(host="127.0.0.1", port=args.port, debug=False)
+    print("Dashboard: http://%s:%d  (Ctrl+C to stop)" % (args.host, args.port))
+    app.run(host=args.host, port=args.port, debug=False)
 
 
 if __name__ == "__main__":

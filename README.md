@@ -50,10 +50,13 @@ steps are deterministic (fixed seeds) and reproducible in under 15 minutes.
    `mxbai-embed-large` + `llama3.2:1b` automatically (`.devcontainer/`).
 3. Then:
    ```bash
-   python interact.py           # chat from the terminal
-   python web_server.py         # web dashboard + live chat → http://localhost:8000
-   python run_eval.py           # reproduce the headline numbers
+   python interact.py # chat from the terminal
+   python web_server.py --host 0.0.0.0 # dashboard + live chat; Codespaces will forward port 8000
+   python run_eval.py # reproduce the headline numbers
    ```
+   When the server starts, Codespaces shows a **"Forwarded Ports"** panel — open
+   **http://localhost:8000** locally, or click the forwarded-port "Globe" icon to get a
+   **public URL** you can share with anyone.
 
 ### Option B — Run it locally
 
@@ -189,7 +192,7 @@ Ran `python run_eval.py` on 2026-09-21 → identical numbers to the committed
 | `python run.py --all` | Full pipeline: pairs → RAG → golden set → eval → analysis (skips completed steps) |
 | `python run_eval.py` | Headline metrics vs. 2 baselines → `results/evaluation_summary.json` |
 | `python interact.py` | Chat with the agent in your terminal (type `quit` to exit) |
-| `python web_server.py` | Dashboard + live chat → <http://localhost:8000> (Ctrl+C stops) |
+| `python web_server.py` | Dashboard + live chat → <http://localhost:8000> (Ctrl+C stops). For other users: `python web_server.py --host 0.0.0.0`, then share `http://<your-IP>:8000` |
 | `python test_agent.py` | Quick 5-message smoke test |
 | `python build_pairs.py --force` | Re-extract pairs from `twcs.csv` (env `TWCS_CSV`) |
 | `python build_rag_index.py 2000` | (Re)build the RAG embedding index |

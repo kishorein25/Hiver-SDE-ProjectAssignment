@@ -7,11 +7,15 @@
   "remoteUser": "root",
   "postCreateCommand": "bash .devcontainer/setup.sh",
   "postStartCommand": "bash .devcontainer/poststart.sh",
-  "forwardPorts": [11434],
+  "forwardPorts": [11434, 8000],
   "portsAttributes": {
     "11434": {
       "label": "Ollama API",
       "onAutoForward": "ignore"
+    },
+    "8000": {
+      "label": "Web Dashboard",
+      "onAutoForward": "notify"
     }
   },
   "customizations": {
