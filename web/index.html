@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0f" />
+  <meta name="color-scheme" content="dark" />
+  <title>Uber_Support AI Assistant &mdash; Dashboard</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%236d5ef7'/%3E%3Ctext x='16' y='22' font-family='Arial' font-size='17' font-weight='800' fill='white' text-anchor='middle'%3Eu%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- ==================== sidebar ==================== -->
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <span class="brand__logo">@</span>
+        <div class="brand__text">
+          <strong>Uber_Support</strong>
+          <span>AI Support Assistant</span>
+        </div>
+      </div>
+
+      <nav class="nav" id="nav">
+        <a class="nav__link nav__link--active" href="#dashboard" data-tab="dashboard">Dashboard</a>
+        <a class="nav__link" href="#evaluation" data-tab="evaluation">Evaluation</a>
+        <a class="nav__link" href="#golden" data-tab="golden">Golden Set</a>
+        <a class="nav__link" href="#chat" data-tab="chat">Live Chat</a>
+        <a class="nav__link" href="#files" data-tab="files">Data &amp; Files</a>
+      </nav>
+
+      <div class="sidebar__foot">
+        <span class="tag tag--good" id="agent-ready">AGENT READY</span>
+        <span class="muted" id="emp-data-note"></span>
+      </div>
+    </aside>
+
+    <!-- ==================== main ==================== -->
+    <div class="main">
+      <header class="topbar">
+        <button class="topbar__burger" id="burger" aria-label="Menu">&#9776;</button>
+        <span class="topbar__brand">Uber_Support AI</span>
+        <div class="topbar__toggle" id="dash-model-toggle"></div>
+      </header>
+
+      <div class="overlay" id="overlay"></div>
+
+      <div class="content" id="content">
+        <div class="view view--active" id="view-dashboard"></div>
+        <div class="view" id="view-evaluation"></div>
+        <div class="view" id="view-golden"></div>
+        <div class="view" id="view-chat"></div>
+        <div class="view" id="view-files"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== file modal ==================== -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__box">
+      <div class="modal__head">
+        <h3 id="modal-title"></h3>
+        <button class="modal__close" id="modal-close" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal__body" id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

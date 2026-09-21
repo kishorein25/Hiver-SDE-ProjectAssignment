@@ -4,6 +4,7 @@ import io
 import json
 import os
 import random
+import argparse
 
 import ui
 
@@ -14,8 +15,25 @@ CSV_PATH = os.environ.get(
     "TWCS_CSV",
     r"D:\dataset\twcs\twcs.csv",
 )
+OUT_PATH = "data/uber_pairs.json"
+
+parser = argparse.ArgumentParser(description="Extract Uber_Support customer->agent pairs from twcs.csv")
+parser.add_argument("--force", action="store_true",
+                    help="re-extract even if data/uber_pairs.json already exists")
+args = parser.parse_args()
 
 ui.banner("Extracting Uber pairs")
+
+if os.path.exists(OUT_PATH) and not args.force:
+    ui.status("ok", f"data/uber_pairs.json already exists ({os.path.getsize(OUT_PATH):,} bytes) - skipping extraction")
+    ui.status("info", "Run with --force to regenerate from the raw CSV.")
+    sys.exit(0)
+
+if not os.path.exists(CSV_PATH):
+    ui.status("fail", f"Raw dataset not found at {CSV_PATH}")
+    ui.status("info", "Set the TWCS_CSV env var to your downloaded twcs.csv, or check data/"
+                      "uber_pairs.json (already committed) before running.")
+    sys.exit(1)
 ui.status("info", "Loading only needed columns from CSV...")
 df = pd.read_csv(
     CSV_PATH,

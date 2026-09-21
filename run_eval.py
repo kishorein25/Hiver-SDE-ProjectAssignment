@@ -114,6 +114,10 @@ ESCALATION_RULES = [
      "Suspected unauthorized account access"),
     (r"\bidiot\b|angry|scared for my life|fear for my life|wouldn'?t unlock|\bunsafe\b",
      "Customer reports feeling unsafe or extreme distress"),
+    (r"\bemergency\b",
+     "Customer reports an emergency / urgent situation"),
+    (r"\battack(ed|ing|s)?\b|\bassault(ed|s)?\b|\bthreaten(ed|ing|s)?\b|\bharass(ed|ing|es)?\b|\babuse(d)?\b",
+     "Customer reports physical threat / assault / harassment"),
     (r"verification code[s]?.*(not request|did not request)|\b4 verification|no longer able to access",
      "Suspicious verification activity / account takeover risk"),
     (r"still waiting|still haven'?t|months (in|now) (and )?still|\b3rd time\b",
@@ -145,13 +149,14 @@ def rule_escalate(message):
 # must not auto-generate an Uber RAG reply. It escalates straight to a human
 # (admin). Word boundaries are used so e.g. "ola" doesn't hit "hola".
 EXTERNAL_BRANDS = [
-    "zomato", "swiggy", "oso", "ola", "rapido", "porter", "lyft", "bolt car",
-    "grab", "gocar", "gocab", "deliveroo", "doordash", "grubhub",
-    "amazon", "flipkart", "myntra", "meesho", "ajio", "snapdeal", "d mart",
-    "bigbasket", "big basket", "zepto", "blinkit", "dunzo", "instamart",
-    "paytm", "phonepe", "netflix", "prime video", "hotstar", "spotify",
-    "irctc", "redbus", "red bus", "makemytrip", "cleartrip", "airbnb",
-    "fedex", "dhl", "bluedart", "blue dart", "ekart",
+    "zomato", "zomoto", "zomatto", "zomatoo", "swiggy", "oso", "ola", "rapido",
+    "porter", "lyft", "bolt car", "grab", "gocar", "gocab", "deliveroo",
+    "doordash", "grubhub", "amazon", "flipkart", "myntra", "meesho", "ajio",
+    "snapdeal", "d mart", "bigbasket", "big basket", "zepto", "blinkit",
+    "dunzo", "instamart", "paytm", "phonepe", "netflix", "prime video",
+    "hotstar", "spotify", "irctc", "redbus", "red bus", "makemytrip",
+    "cleartrip", "airbnb", "fedex", "dhl", "bluedart", "blue dart", "ekart",
+    "linkedin", "instagram", "facebook", "whatsapp", "snapchat", "telegram",
 ]
 _OOS_BRANDS = [r"\s+".join(re.escape(p) for p in b.split()) for b in EXTERNAL_BRANDS]
 _OOS_RE = re.compile(r"\b(" + "|".join(_OOS_BRANDS) + r")\b", flags=re.IGNORECASE)
@@ -191,6 +196,65 @@ class RAG:
         return [(self.pairs[i]["agent_text"], float(sims[i])) for i in idxs]
 
 
+# ---------------- Greeting detection ----------------
+# A bare greeting (no complaint/issue yet) gets a friendly welcome reply instead
+# of a random retrieved resolution. Token-based so real issues are never
+# swallowed (e.g. "hi my driver was rude" still runs the full pipeline).
+_GREETING_TOKENS = {
+    "hi", "hiya", "hello", "hey", "yo", "howdy", "hola", "namaste",
+    "good", "morning", "afternoon", "evening", "day", "morn",
+    "uber", "there", "support", "team",
+}
+_GREETING_STARTS = {"hi", "hello", "hey", "yo", "hiya", "howdy", "hola", "namaste", "good"}
+
+# Stretched/typo greetings like "hii", "heyy", "helloo", "yoo".
+_GREETING_WORD_RES = [
+    re.compile(r"^h+i+$"),            # hi, hii, hiii
+    re.compile(r"^h+e+y+$"),          # hey, heyy
+    re.compile(r"^h+e+l{2,}o+$"),     # hello, helloo
+    re.compile(r"^h+i+y+a+$"),        # hiya
+    re.compile(r"^y+o+$"),            # yo, yoo
+    re.compile(r"^h+o+w+d+y+$"),      # howdy
+    re.compile(r"^h+o+l+a+$"),        # hola
+    re.compile(r"^n+a+m+a+s+t+e+$"),  # namaste
+    re.compile(r"^g+o+d+$"),          # good, goood
+    re.compile(r"^m+o+r+n+i+n+g+$"),  # morning
+    re.compile(r"^m+o+r+n+$"),        # morn
+    re.compile(r"^a+f+t+e+r+n+o+o+n+$"),  # afternoon
+    re.compile(r"^e+v+e+n+i+n+g+$"),  # evening
+    re.compile(r"^d+a+y+$"),          # day
+    re.compile(r"^u+b+e+r+$"),        # uber
+    re.compile(r"^t+h+e+r+e+$"),      # there
+    re.compile(r"^s+u+p+o+r+t+$"),    # support
+    re.compile(r"^t+e+a+m+$"),        # team
+]
+
+
+def _stretched_greeting(word):
+    return any(rx.match(word) for rx in _GREETING_WORD_RES)
+
+GREETING_REPLY = (
+    "Hi there! Welcome to Uber Support. I help with ride, fare, delivery, and "
+    "account questions - how can we assist you today?"
+)
+
+
+def is_greeting(message):
+    """True only for a message that is basically just a greeting
+    (optionally addressing Uber), with no described problem."""
+    stripped = message.strip()
+    if not stripped or any(c.isdigit() for c in stripped):
+        return False
+    words = [w.lower() for w in "".join(
+        c if c.isalnum() or c.isspace() else " " for c in stripped
+    ).split()]
+    if not words:
+        return False
+    if not any(words[0].startswith(s) for s in _GREETING_STARTS):
+        return False
+    return all(w in _GREETING_TOKENS or _stretched_greeting(w) for w in words)
+
+
 # ---------------- Agent ----------------
 class Agent:
     def __init__(self, anchors, rag):
@@ -198,6 +262,19 @@ class Agent:
         self.rag = rag
 
     def process(self, message):
+        # Bare greeting (no issue yet) -> friendly welcome, no RAG lookup.
+        if is_greeting(message):
+            return {
+                "intent": "general_inquiry",
+                "reply": GREETING_REPLY,
+                "reply_source_sim": 1.0,
+                "escalate": False,
+                "escalation_reason": "Greeting / opening message - no issue described yet; "
+                                     "welcomed and asked what we can help with",
+                "route": "assistant",
+                "greeting": True,
+            }
+
         # Out-of-scope: any non-Uber brand/service mention -> escalate to a
         # human (admin) and do NOT auto-generate an Uber RAG reply.
         oos, oos_brand = detect_out_of_scope(message)

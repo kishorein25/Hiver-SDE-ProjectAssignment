@@ -179,9 +179,9 @@
     {
       "idx": 26,
       "judge": 1,
-      "similarity": 0.5624197893659221,
+      "similarity": 0.8102574777509126,
       "customer": "@115873 Support Services are awful. I am so upset w/ the extra $8 in fees and customer service sent ",
-      "agent": "This request is outside Uber's support scope. It won't be answered automatically and has been routed to a human agent (a",
+      "agent": "@198058 We can definitely take a closer look! Please send us your email connected to your account so we can further assi",
       "reference": "@733223 We're here to help! Send us a DM with your email address so we can connect."
     },
     {
@@ -195,9 +195,9 @@
     {
       "idx": 135,
       "judge": 1,
-      "similarity": 0.6145191765595133,
+      "similarity": 0.891204065098131,
       "customer": "Hey @2006 @115873 Your driver completely screwed up 3x &amp; customer service in app stinks! My frie",
-      "agent": "This request is outside Uber's support scope. It won't be answered automatically and has been routed to a human agent (a",
+      "agent": "@349738 We're sorry to hear this was your experience. We're now reviewing your email and will be in touch shortly. We ap",
       "reference": "@240982 We're sorry to hear this was your experience. Please send us a DM (Direct Message) with your email address with "
     },
     {
