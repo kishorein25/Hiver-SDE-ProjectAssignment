@@ -17,7 +17,6 @@ committed, so a fresh clone reproduces the headline numbers immediately.
 |---|---|
 | Repo | <https://github.com/kishorein25/Hiver-SDE-ProjectAssignment> |
 | Live demo (local) | `python web_server.py` → <http://localhost:8000> |
-| Verified on | 2026-09-21 — headline numbers reproduced via `python run_eval.py` |
 
 ---
 
